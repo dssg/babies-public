@@ -1,0 +1,2260 @@
+TABLE,VAR,FORMAT,FORMAT.DESC,VAR.L,VAR.DESC
+ACTIVITY,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+ACTIVITY,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ACTIVITY,ACTIVITY_D,D,8,Activity Date,Indicates When the Activity Took Place.
+ACTIVITY,ACTIVITY_C,C,4,Activity Code,Activity Performed - See Code Table.
+ACTIVITY,ACTV_SEQ_N,N,2,Activity Sequence Number,Used to Assure Uniqueness When There Are Multiple Records for the Same Activity Code .
+ACTIVITY,SERV_TYP_C,C,4,Service Type Code,Provides a Link to the Service Type Table.
+ACTIVITY,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table.
+ACTIVITY,CONTMETH_C,C,4,Method Of Contact,See Code Table.
+ACTIVITY,CONTSITE_C,C,4,Site Of Contact,See Code Table.
+ACTIVITY,TIMSPNTH_H,N,2,Time Spent Hours,Time spent on the activity in hours.
+ACTIVITY,TIMSPNTM_H,N,2,Time Spent Minutes,Time spent on the activity in minutes.
+ACTIVITY,SYS_GEN_F,C,1,System Generated Indicator,Flag for System Generated Records.
+ACTIVITY,COMMENTS_M,C,50,Comments,Used to record additional notes.
+ACTIVITY,HV_FAIL_C,C,4,Failed Reason,Reason that home visit failed.
+ACTIVITY,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ACTIVITY,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ACTIVITY,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ACTIVITY,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ACTLPROC,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+ACTLPROC,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ACTLPROC,ACT_PROC_D,D,8,Date of Service,Procedure Completion Date.
+ACTLPROC,SERV_TYP_C,C,4,Service Type Code,Links to Service Type Code Table.
+ACTLPROC,PROCEDUR_C,C,5,Procedure Code,Links to Procedure Code Table.
+ACTLPROC,PAYEE_N,N,2,Payee Number,Used to Distinguish Between Provider Payees.
+ACTLPROC,REF_PROV_I,N,9,Referring Provider ID,Links to Provider Table.
+ACTLPROC,FACL_NME_T,C,30,Facility Name,Name of Facility.
+ACTLPROC,PRI_AUTH_N,N,12,Primary Authorization Number,Primary Authorization Number.
+ACTLPROC,UNIT_TYP_C,C,4,Unit Type Code,See Code Table.
+ACTLPROC,UNITS_N,N,4,Number of Units,Number of Units used.
+ACTLPROC,PROC_MOD_T,C,2,Modifier,See Code Table.
+ACTLPROC,PRC_RSLT_C,C,4,Procedure Result,See Code Table .
+ACTLPROC,PAYOR_C,C,4,Payor Code (Coverage Type),See Code Table (Can reference Medicaid/Insurance Table).
+ACTLPROC,ADQ_ASSM_C,C,4,Adequacy or Assessment,See Code Table.
+ACTLPROC,PRC_CHRG_N,N,7.2,Procedure Charge,Charge/Reimbursement Amount.
+ACTLPROC,BIL_STAT_C,C,4,Billing Status,See Code Table.
+ACTLPROC,BIL_ACKN_D,D,8,Bill Acknowledged Date,Date that bill was acknowledged.
+ACTLPROC,BIL_PRNT_D,D,8,Bill Print Date,Date that bill was printed.
+ACTLPROC,RSLT_RCV_D,D,8,Results Received Date,Date that results were received.
+ACTLPROC,BTH_USED_C,C,4,Bethesda Used Code,Type of Bethesda System Used for Pap Tests.
+ACTLPROC,SPCM_ADQ_C,C,4,Specimen Adequate Code,See Code Table.
+ACTLPROC,SPCM_TYP_C,C,4,Specimen Type Code,See Code Table.
+ACTLPROC,FILMCOMP_F,C,1,Film Comparison Flag,"""Y"" = Yes, ""N"" or Blank = No."
+ACTLPROC,FILMCOMP_C,C,4,Film Comparison Codes,See Code Table.
+ACTLPROC,FILMCOMP_D,D,8,Film Comparison Date,Date of Film Comparison.
+ACTLPROC,PRC_TRT_F,C,1,Procedure Done as Treatment,"""Y"" = Yes, ""N"" or Blank = No."
+ACTLPROC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ACTLPROC,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ACTLPROC,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ACTLPROC,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ACTLSERV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+ACTLSERV,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ACTLSERV,ACT_SERV_D,D,8,Date of Service,Service Date.
+ACTLSERV,SERV_TYP_C,C,4,Service Type Code,Link to Service Type Table.
+ACTLSERV,EMPL_ID_I,N,9,Employee ID,Links to Employee Table.
+ACTLSERV,SERV_PLC_C,C,4,Place of Service,See Code Table.
+ACTLSERV,PROV_ID_I,N,9,Provider ID,Links to Provider Table.
+ACTLSERV,PRI_DIAG_C,C,5,Primary Diagnosis Code,See Code Table.
+ACTLSERV,SCN_DIAG_C,C,5,Secondary Diagnosis Code,Same as Above.
+ACTLSERV,OTH_DIAG_C,C,5,Other Diagnosis Code,Same as Above.
+ACTLSERV,TRAN_PRV_F,C,1,Transportation Provided Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+ACTLSERV,COMMENTS_M,C,50,Comments,Used to record additional notes.
+ACTLSERV,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ACTLSERV,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ACTLSERV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ACTLSERV,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ADDRESS,ADDR_ID_I,C,14,Address ID,This field contains the Cornerstone Participant Identifier for Participant Records (This table has a different format because it is also used to store other address types such as an Employee Address which could also be accessed if desired).
+ADDRESS,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+ADDRESS,ADDR_ID_C,C,4,Address ID Type Code,"Participant Address Records Contain the Literal ""PART.""
+When selecting these records, normally filter on this value."
+ADDRESS,ADDR_TYP_C,C,4,Address Type Code,"See Code Table - The Residential Address which will normally be used contains a value of ""R."""
+ADDRESS,ADDR_LN1_T,C,20,Address Line 1,Address information.
+ADDRESS,ADDR_LN2_T,C,20,Address Line 2,Address information.
+ADDRESS,ADDR_APT_T,C,5,Apartment Number,Apartment number.
+ADDRESS,ADDR_CTY_T,C,20,City,City name.
+ADDRESS,ADDR_ST_C,C,4,State,Two Digit Postal Code in the Code Table.
+ADDRESS,ADDR_ZIP_N,N,5,Zip Code,Zip Code.
+ADDRESS,ZIP_EXT_N,N,4,Zip Code Extension,Zip Code Extension.
+ADDRESS,CONT_NME_T,C,25,Contact Name,Contact Person's Name.
+ADDRESS,RELATE_C,C,4,Relationship Code,See Code Table.
+ADDRESS,COUNTY_C,C,4,County Code,See Code Table.
+ADDRESS,PHNE_NBR_N,N,10,Phone Number,Phone Number.
+ADDRESS,MODM_NBR_N,N,10,Modem Number,Modem Number.
+ADDRESS,FAX_NBR_N,N,10,Fax Number,Fax Number.
+ADDRESS,EMAIL_T,C,50,Email Address,Email Address.
+ADDRESS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ADDRESS,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ADDRESS,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ADDRESS,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ADDRESS,CELL_NBR_N,N,10,Cell Phone Number,Cell Phone Number.
+AGENCY,AGENCY_I,C,6,Agency ID,Cornerstone Agency Number.
+AGENCY,REGION_C,C,4,Region Code,See Code Table.
+AGENCY,AGNY_NME_T,C,30,Agency Name,Agency Name.
+AGENCY,COMMENTS_M,M,4,Comments,Used to record additional notes.
+AGENCY,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+AGENCY,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ALERT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+ALERT,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ALERT,ALRT_WRI_D,D,8,Alert Written Date,Date the alert was written.
+ALERT,ALRT_SEQ_N,N,2,Alert Sequence Number,Each alert message has a unique sequence number.
+ALERT,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table.
+ALERT,ALRT_MSG_M,M,10,Alert Message,The actual alert message text.
+ALERT,ACKNOW_F,C,1,Acknowledged Field,"""Y"" = Yes, ""N"" or Blank = No."
+ALERT,ACKN_BY_I,N,9,Acknowledged By,Employee ID of the person who acknowledged the alert.
+ALERT,ACKN_D,D,8,Acknowledged Date,Date the alert was acknowledged.
+ALERT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ALERT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ALERT,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ALERT,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+APPNMNTS,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+APPNMNTS,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+APPNMNTS,APPOINT_D,D,8,Appointment Date,Record participant's appointment date.
+APPNMNTS,STRT_TME_H,N,4,Start Time,HH:MM.
+APPNMNTS,SCHD_ID_I,N,2,Schedule ID,Link to Schedule ID Table.
+APPNMNTS,RSRC_N,N,2,Resource Number,Identifies Resource Within Schedule.
+APPNMNTS,EMPL_ID_I,N,9,Employee ID,Link to Employee Table.
+APPNMNTS,SERV_TYP_C,C,4,Service Type Code,Link to Service Type Table.
+APPNMNTS,APPN_LGT_N,N,4,Time - Length Of Appointment,In Minutes.
+APPNMNTS,COMMENTS,M,10,Comments,Used to record additional notes.
+APPNMNTS,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+APPNMNTS,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+APPNMNTS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+APPNMNTS,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSIGNFP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+ASSIGNFP,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ASSIGNFP,STRTCERT_D,D,8,Start/Certification Date,Beginning of WIC Certification Period.
+ASSIGNFP,FP01_NBR_I,C,3,Food Package Number 1,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF01_RSN_C,C,4,Medically Prescribed Formula Reason Code 1,"Reason why Special Formula is needed, see Code Table."
+ASSIGNFP,SF01_PA_D,D,8,Special Formula Physician Appointment Date 1,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP02_NBR_I,C,3,Food Package Number 2,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF02_RSN_C,C,4,Medically Prescribed Formula Reason Code 2,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF02_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 2,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP03_NBR_I,C,3,Food Package Number 3,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF03_RSN_C,C,4,Medically Prescribed Formula Reason Code 3,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF03_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 3,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP04_NBR_I,C,3,Food Package Number 4,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF04_RSN_C,C,4,Medically Prescribed Formula Reason Code 4,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF04_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 4,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP05_NBR_I,C,3,Food Package Number 5,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF05_RSN_C,C,4,Medically Prescribed Formula Reason Code 5,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF05_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 5,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP06_NBR_I,C,3,Food Package Number 6,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF06_RSN_C,C,4,Medically Prescribed Formula Reason Code 6,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF06_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 6,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP07_NBR_I,C,3,Food Package Number 7,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF07_RSN_C,C,4,Medically Prescribed Formula Reason Code 7,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF07_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 7,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP08_NBR_I,C,3,Food Package Number 8,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF08_RSN_C,C,4,Medically Prescribed Formula Reason Code 8,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF08_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 8,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP09_NBR_I,C,3,Food Package Number 9,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF09_RSN_C,C,4,Medically Prescribed Formula Reason Code 9,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF09_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 9,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP10_NBR_I,C,3,Food Package Number 10,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF10_RSN_C,C,4,Medically Prescribed Formula Reason Code 10,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF10_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 10,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP11_NBR_I,C,3,Food Package Number 11,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF11_RSN_C,C,4,Medically Prescribed Formula Reason Code 11,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF11_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 11,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,FP12_NBR_I,C,3,Food Package Number 12,Assigned Food Packages for WIC during the maximum 12 month certification period - Link to Food Package Table.
+ASSIGNFP,SF12_RSN_C,C,4,Medically Prescribed Formula Reason Code 12,"Reason why Medically Prescribed Formula is needed, see Code Table."
+ASSIGNFP,SF12_PA_D,D,8,Medically Prescribed Formula Physician Appointment Date 12,Date of appointment with Physician regarding Medically Prescribed Formula.
+ASSIGNFP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSIGNFP,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSIGNFP,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ASSIGNFP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ASSMCODE,ASSM_TYP_C,C,4,Assessment Type Code,Type of Assessment.
+ASSMCODE,PGM_ID_C,C,4,Program ID Code,See Code Table.
+ASSMCODE,CATEGORY_C,C,4,Category,See Code Table.
+ASSMCODE,AGE_LO_N,N,4,Age Low Number,The youngest age allowed.
+ASSMCODE,AGE_HI_N,N,4,Age High Number,The oldest age allowed.
+ASSMCODE,SEX_CODE,C,4,Sex Code,See Code Table.
+ASSMCODE,BRF_DESC_T,C,30,Brief Description,Brief Description of Assessment.
+ASSMCODE,ASSM_CDE_C,C,1,Assessment Code,"""A"" = Active, ""I"" = Inactive."
+ASSMCODE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSMCODE,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSMGOAL,ASSM_TYP_C,C,4,Assessment Type,See Code Table.
+ASSMGOAL,QUESTION_N,N,3,Question Number,The question number within the assessment.
+ASSMGOAL,GOAL_C,C,4,Goal Code,Recommended Goals that Link to Goal Table.
+ASSMGOAL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSMGOAL,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSMQTS,ASSM_TYP_C,C,4,Assessment Type,See Code Table.
+ASSMQTS,QUESTION_N,N,3,Question Number,The question number in the assmqts table.
+ASSMQTS,DISP_SEQ_N,N,3,Display Sequence Number,The question number that displays on the assessment screen.
+ASSMQTS,SEQ_N,N,3,Sequence Number,"Within the question, the sequence number keeps track of each line of the question."
+ASSMQTS,SKIP_TO_N,N,3,Skip to Number,"Based upon the answer of the assessment question, the application may skip over questions that do not apply and go directly to the next applicable question."
+ASSMQTS,ACPT_VAL_C,C,4,Acceptable Value Type,Used to Control Possible Responses.
+ASSMQTS,REL_OP_C,C,4,Relational Operand,Used to Control Possible Responses.
+ASSMQTS,CMPR_VAL_T,C,10,Comparative Value,Used to Control Possible Responses.
+ASSMQTS,NORM_HI_N,N,5,Norm High,Used to Control Possible Responses.
+ASSMQTS,NORM_LOW_N,N,5,Norm Low,Used to Control Possible Responses.
+ASSMQTS,QTS_NARR_T,C,63,Question Narrative,Used to Control Possible Responses.
+ASSMQTS,REQ_RESP_F,C,1,Required Response Indicator,Used to Control Possible Responses.
+ASSMQTS,REQ_RPT_F,C,1,Required Report Indicator,"""Y"" = Yes, ""N"" = No."
+ASSMQTS,TBL_NME_T,C,10,Table Name Related To Assessment Question,To extract prior data captured.
+ASSMQTS,ELEM_NME_T,C,10,Element Name Related To Assess Question,To extract prior data captured.
+ASSMQTS,QTS_STAT_C,C,1,Question Status,"""A"" = Active, ""I"" = Inactive."
+ASSMQTS,PRIORITY_C,C,4,Goal Priority,"""Y"" = Yes, ""N"" = No."
+ASSMQTS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSMQTS,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSMQTS,ANSWER_F,L,1,Answer Flag,"""Y"" = Yes, ""N"" or Blank = No."
+ASSMRISK,ASSM_TYP_C,C,4,Assessment Type,Type of assessment.
+ASSMRISK,QUESTION_N,N,3,Question Number,The question number.
+ASSMRISK,RISK_C,C,4,Risk Code,See Code Table.
+ASSMRISK,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSMRISK,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSMRISK,RISK_TYP_C,C,4,Risk Type Code,See Code Table.
+ASSMRSLT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+ASSMRSLT,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+ASSMRSLT,ASSM_TYP_C,C,4,Assessment Type,See Code Table.
+ASSMRSLT,ASSESS_D,D,8,Date of Assessment,Date the assessment was given.
+ASSMRSLT,QUESTION_N,N,3,Question Number,The question number within the assessment.
+ASSMRSLT,QTS_RSLT_T,C,10,Question Result,Normative or non-normative value entered.
+ASSMRSLT,COMMENTS_M,C,65,Comments,Used to record additional notes.
+ASSMRSLT,EMPL_ID_I,N,9,Employee ID/Assessor,Link to Employee Table.
+ASSMRSLT,CONFIDNT_F,C,1,Confidentiality Flag Indicator,Makes assessment confidential.
+ASSMRSLT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+ASSMRSLT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ASSMRSLT,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+ASSMRSLT,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+ASSMRSLT,COMMENTS,M,10,Comments,Used to record additional notes.
+AUDIT,UP_DN_F,C,1,Upload/Download Flag,"""U"" = Uploaded.
+""D"" = Downloaded."
+AUDIT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+AUDIT,PROCESS_D,D,8,Process Date,Date of the Process.
+AUDIT,PROCESS_T,C,8,Process Time,Time of the Process.
+AUDIT,DBF_NAME_T,C,10,DBF Name,Cornerstone Table Name.
+AUDIT,CLIN_CNT_N,N,6,Clinic Count Number,Number of records from the clinic.
+AUDIT,C_O_CNT_N,N,6,Central Office Count Number,Number of records from Central Office.
+AUDIT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+AUDIT,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+AUDIT,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+AUDIT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+AUTHIFSP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+AUTHIFSP,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+AUTHIFSP,START_D,D,8,Start Date,Authorization Start Date.
+AUTHIFSP,END_D,D,8,End Date,Authorization End Date.
+AUTHIFSP,NO_MNTHS_N,N,2,Number of Months,Number of Months Authorized.
+AUTHIFSP,PROV_ID_I,N,9,Provider ID,Provider ID; links to Provider table.
+AUTHIFSP,PROV_SFX_I,N,3,Provider suffix,Provider Suffix ID; links to Provider table.
+AUTHIFSP,AUTH_TYP_C,C,4,Authorization Type code,See Code Table.
+AUTHIFSP,SERV_TYP_C,C,4,Service Type Code,See Service Code Table.
+AUTHIFSP,PROCHIPA_C,C,5,Procedure Code HIPA,See PROCHIPA table.
+AUTHIFSP,MODIFR01_C,C,2,Modifier 1 Code,See Code Table.
+AUTHIFSP,MODIFR02_C,C,2,Modifier 2 Code,See Code Table.
+AUTHIFSP,MODIFR03_C,C,2,Modifier 3 Code,See Code Table.
+AUTHIFSP,MODIFR04_C,C,2,Modifier 4 Code,See Code Table.
+AUTHIFSP,METH_TYP_C,C,4,Method Type Code,See Code Table.
+AUTHIFSP,IFSP_LOC_C,C,4,IFSP Location Code,See Code Table.
+AUTHIFSP,NAT_ENV_I,C,1,Natural Environment Indicator,"""Y"" = Yes, ""N"" or blank = No."
+AUTHIFSP,FREQ_N,N,4,Frequency Number,The number of procedures allowed per authorization.
+AUTHIFSP,FREQ_TYP_C,C,4,Frequency Type Code,See Code Table.
+AUTHIFSP,FREQ_INT_N,N,4,Frequency Intensity Number,The length in minutes of each procedure.
+AUTHIFSP,AUTHSTAT_C,C,4,Authorization Status Code,The Status of each Authorization.
+AUTHIFSP,AUTHSTAT_D,D,8,Authorization Status Date,The Date of the Status.
+AUTHIFSP,AT_AMT_N,N,7.2,AT Authorization Amount,"For AT Authorizations, the amount paid for the equipment."
+AUTHIFSP,AUTH_PRN_D,D,8,Authorization Print Date,The Date that the authorization was printed.
+AUTHIFSP,PRIV_INS_C,C,4,Private Insurance Code,See Code Table.
+AUTHIFSP,AUTH_NUM_C,C,14,Authorization Number Code,The Cornerstone generated authorization number.
+AUTHIFSP,ENTRY_D,D,8,Entry Date,EIPGM Date of Record Entry.
+AUTHIFSP,COMMENTS_T,C,40,Comments,Used to record additional notes.
+AUTHIFSP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+AUTHIFSP,OP_LNAME_T,C,30,Ordering Physician Last Name,"For AT Authorizations, the Last Name of the Physician that ordered the equipment."
+AUTHIFSP,OP_FNAME_T,C,14,Ordering Physician First Name,"For AT Authorizations, the First Name of the Physician that ordered the equipment."
+AUTHIFSP,OP_TAXID_T,C,10,Ordering Physician Tax ID,"For AT Authorizations, the Tax ID of the Physician that ordered the equipment."
+AUTHIFSP,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+AUTHIFSP,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+AUTHIFSP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+AUTHTRAK,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+AUTHTRAK,AUTH_NUM_C,C,14,Authorization Number,The Cornerstone generated authorization number from SV07.
+AUTHTRAK,CHNG_D,D,8,Change Date,The Date that the record was edited..
+AUTHTRAK,CHNGTIME_C,C,8,Change Time,The Time that the record was edited. .
+AUTHTRAK,ORIG_ID_I,N,9,Original Employee ID,The ID of the employee .
+AUTHTRAK,CHNG_ID_I,N,9,Change Employee ID,The ID of the new employee that .
+AUTHTRAK,CHNG_STAT_C,C,4,Change Status Code,See Code Table for Change Status Code descriptions.
+AUTHTRAK,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+AUTHTRAK,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+AUTHTRAK,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+BCCPROG,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+BCCPROG,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+BCCPROG,ACT_SERV_D,D,8,Date of Service,Beginning of Each BCCP Screening Cycle.
+BCCPROG,SERV_TYP_C,C,4,Service Type Code,"Link to Service Type Table - Must be equal to ""BCS"" or ""CCS""."
+BCCPROG,US_CITZN_F,C,1,US Citizen Flag,"""Y"" = Yes, ""N"" or Blank = No."
+BCCPROG,PAYOR_C,C,4,Payor Code (Coverage Type),See Coverage Type in Code Table for Payor .
+BCCPROG,PART_HIS_C,C,4,Participant History,Symptomatic or Asymptomatic.
+BCCPROG,DIAG_ST_C,C,4,Diagnosis Status,See Code Values.
+BCCPROG,DIAG_C,C,4,Diagnosis,See Code Values.
+BCCPROG,DIAG_D,D,8,Diagnosis Date,Date of Diagnosis.
+BCCPROG,NXT_SCRN_D,D,8,Next Screening Date,Date of participant's next screening.
+BCCPROG,NOTIF_D,D,8,Notification Date,Date of Notification.
+BCCPROG,STG_DIAG_C,C,4,Stage At Diagnosis,See Code Values.
+BCCPROG,TUMOR_SZ_C,C,4,Tumor Size,See Code Values.
+BCCPROG,STAT_TRT_C,C,4,Status of Treatment,See Code Values.
+BCCPROG,TRT_PRV_C,C,4,Treatment Provided,See Code Values.
+BCCPROG,TRTMNT_D,D,8,Treatment Date,Date that treatment started.
+BCCPROG,RAD_TRT_F,C,1,Radiation Treatment Ind.,"""Y"" = Yes, ""N"" or Blank = No."
+BCCPROG,CHEM_TRT_F,C,1,Chemotherapy Treatment Ind.,"""Y"" = Yes, ""N"" or Blank = No."
+BCCPROG,PROV_ID_I,N,9,Transfer To Provider,Link to Provider Table for Transferred Participants.
+BCCPROG,INDCTN_C,C,4,Indication Code,See Code Table.
+BCCPROG,DIAG_REF_D,D,8,Diagnostic Referral Date,Date of Diagnostic Referral.
+BCCPROG,WRKUP_C,C,4,Workup Code,See Code Table.
+BCCPROG,LAST_UPD_D,D,8,Date of Last Update,Last Site Update of This Record.
+BCCPROG,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+BCCPROG,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+BCCPROG,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+BIRTH,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+BIRTH,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+BIRTH,INF_WICM_F,C,1,Infant of WIC Mother Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+BIRTH,MOTHR_ID_I,C,14,Participant ID - Mother,Links to Mother's Participant Records.
+BIRTH,BRTHCRT_T,C,15,Birth Certificate Number,From Vital Records.
+BIRTH,LGT_INCH_N,N,2,Birth Length - Inches,Baby's length in inches at birth.
+BIRTH,LGT_QICH_N,N,1,Birth Length - Quarter Inches,Baby's length in quarter inches at birth.
+BIRTH,WGT_GRM_N,N,4,Birth Weight - Grams,Baby's weight in grams at birth.
+BIRTH,HEADCIRC_N,N,4.1,Head Circumference,Baby's head circumference.
+BIRTH,APGAR_N,C,2,APGAR Score,Baby's APGAR score at birth.
+BIRTH,BRTHCITY_T,C,20,Place of Birth - City,City Code in Code Table.
+BIRTH,BRTH_ST_C,C,4,Place of Birth - State,Two Digit Postal Code in Code Table.
+BIRTH,BRTHCNTY_C,C,4,Place of Birth - County Code,See Code Table.
+BIRTH,BRTH_TYP_C,C,4,Place of Birth - Type Code,See Code Table-Place of Delivery.
+BIRTH,HOSP_ID_C,C,4,Hospital ID Code,See Code Table and/or Hospital Table.
+BIRTH,INF_DISP_C,C,4,Disposition of Infant At Discharge,See Code Table-Infant Disposition.
+BIRTH,INF_CMP1_C,C,4,Infant Complications Code 1,See Code Table.
+BIRTH,INF_CMP2_C,C,4,Infant Complications Code 2,Same as Above.
+BIRTH,INF_CMP3_C,C,4,Infant Complications Code 3,Same as Above.
+BIRTH,INF_CMP4_C,C,4,Infant Complications Code 4,Same as Above.
+BIRTH,INF_CMP5_C,C,4,Infant Complications Code 5,Same as Above.
+BIRTH,APORS_F,C,1,APORS Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+BIRTH,ICU_F,C,1,ICU Admission Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+BIRTH,DTH_CAUS_C,C,4,Cause of Death,See Code Table - Death Cause.
+BIRTH,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+BIRTH,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+BIRTH,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+BIRTH,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+BODMSG,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+BODMSG,DATE,D/T,8,BOD Message Date and Time,The Date and Time that the BOD message was sent.
+BODMSG,FIL,M,4,BOD Message File,The file contains that actual BOD message text..
+BODMSG,TXT,M,4,BOD Message Text,"In older BOD messages, the Text file contained the BOD message text. Now the BOD message text is kept in the message file."
+BODMSG,PGM_ID_C,C,100,Program ID Code,See Code Table.
+BODMSG,TITLE_T,C,50,BOD Message Title,Title of the BOD message for the BOD Message Center.
+BODMSG,MSGID_I,C,8,BOD Message ID,Unique ID assigned to each BOD Message.
+BPUMP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+BPUMP,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+BPUMP,BP_RCVD_D,D,8,Breast Pump Received Date,Date Participant received Breast Pump from Clinic.
+BPUMP,BP_TYP_C,C,4,Breast Pump Type,Type of Breast Pump given to the Participant.
+BPUMP,BP_RTRN_D,D,8,Breast Pump Return Date,The Date that the Breast Pump was returned to the clinic.
+BPUMP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+BPUMP,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+BPUMP,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+BPUMP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+CASEASGN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+CASEASGN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CASEASGN,EMPL_ID_I,N,9,Employee ID,Case Manager Link to Employee Table.
+CASEASGN,PGM_ID_C,C,4,Program ID Code,See Code Table.
+CASEASGN,EFFECT_D,D,8,Effective Date,Start Date of the Case Assignment.
+CASEASGN,END_D,D,8,End Date,End Date of the Case Assignment.
+CASEASGN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CASEASGN,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CASEASGN,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+CASEASGN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+CASENOTE,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CASENOTE,EVENT_D,D,8,Event Date,Date of the Event.
+CASENOTE,EVNT_SEQ_N,N,2,Event Sequence,Used for Multiple Case Notes on the Same Date.
+CASENOTE,CONFIDNT_F,C,1,Confidentiality Flag Indicator,Marks the note as confidential.
+CASENOTE,CASE_PRE_D,D,8,Date Prepared,Date the Case Note was created.
+CASENOTE,MSG_TEXT_M,M,10,Message Text,Free form text of case note.
+CASENOTE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CASENOTE,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CATGHIST,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+CATGHIST,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CATGHIST,PGM_ID_C,C,4,Program ID Code,See Code Table.
+CATGHIST,EFF_FROM_D,D,8,Effective From Date,Beginning of Time Period the Participant was in this Category for Case Management.
+CATGHIST,EFF_THRU_D,D,8,Effective Thru Date,End of Time Period the Participant was in this Category for Case Management.
+CATGHIST,CATEGORY_C,C,4,Category,See Code Table.
+CATGHIST,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CATGHIST,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CATGHIST,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+CATGHIST,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+CHLDEILD,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+CHLDEILD,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CHLDEILD,VISIT_D,D,8,Visit Date,Visit Date.
+CHLDEILD,ASQSE_M,M,10,ASQSE Memo,"Used to record family's strengths, resources and priorities."
+CHLDEILD,OVERALL_M,M,10,Overall Memo,Used to record overall health and medical information.
+CHLDEILD,ADPT_DLY_C,C,3,Adaptive Delay Percentage,Percentage of child's delay compared to their age equivalent peers and/or age equivalent (months).
+CHLDEILD,ADPT_AGE_C,C,10,Adaptive Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,ADPT_M,M,10,Adaptive Memo,Used to record details on child's adaptive development.
+CHLDEILD,COG_DLY_C,C,3,Cognitive Delay Percentage,Percentage of child's delay compared to their age equivalent peers and/or age equivalent (months).
+CHLDEILD,COG_AGE_C,C,10,Cognitive Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,COG_M,M,10,Cognitive Memo,Used to record details on child's cognitive development.
+CHLDEILD,COMM_DLY_C,C,3,Communication Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,COMM_AGE_C,C,10,Communication Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,COMM_M,M,10,Communication Memo,"Used to record details on child's communication development, both expressive and receptive."
+CHLDEILD,EXP_DLY_C,C,3,Expressive Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,EXP_AGE_C,C,10,Expressive Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,REC_DLY_C,C,3,Receptive Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,REC_AGE_C,C,10,Receptive Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,MOTR_DLY_C,C,3,Motor Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,MOTR_AGE_C,C,10,Motor Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,MOTR_M,M,10,Motor Memo,"Used to record information on child's motor development, both fine motor and gross motor."
+CHLDEILD,FINE_DLY_C,C,3,Fine Motor Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,FINE_AGE_C,C,10,Fine Motor Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,GROS_DLY_C,C,3,Gross Motor Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,GROS_AGE_C,C,10,Gross Motor Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,SOCL_DLY_C,C,3,Social/Emotional Delay Percentage,Percentage of child's delay compared to their equivalent peers and/or age equivalent (months).
+CHLDEILD,SOCL_AGE_C,C,10,Social/Emotional Age,"The child's age, in months, based on their percent delay."
+CHLDEILD,SOCL_M,M,10,Social/Emotional Memo,Used to record child's social/emotional skills.
+CHLDEILD,REL_RAT_N,N,1,Social Relationship Rating,Used to record the number rating of child's positive socio-emotional skills.
+CHLDEILD,REL_F,C,1,Social Relationship Flag,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDEILD,REL_M,M,10,Social Relationship Memo,Used to record any new skills or behaviors for the child.
+CHLDEILD,SKLS_RAT_N,N,1,Knowledge/Skills Rating,Used to record the number rating of child's knowledge and skills.
+CHLDEILD,SKLS_F,C,1,Knowledge/Skills Flag,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDEILD,SKLS_M,M,10,Knowledge/Skills Memo,Used to record any new skills or behaviors of the child.
+CHLDEILD,NEED_RAT_N,N,1,Needs Rating,Used to record the number rating of child's needs.
+CHLDEILD,NEED_F,C,1,Needs Flag,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDEILD,NEED_M,M,10,Needs Memo,Used to record any new skills or behaviors acquired by the child.
+CHLDEILD,SRCE1_C,C,4,Source 1,Select from the dropdown list.
+CHLDEILD,ASMINST1_C,C,4,Assessment Instrument 1,Select from the dropdown list.
+CHLDEILD,ASSM1_D,D,8,Assessment Date 1,Date of Assessment 1.
+CHLDEILD,SRCE2_C,C,4,Source 2,Select from the dropdown list.
+CHLDEILD,ASMINST2_C,C,4,Assessment Instrument 2,Select from the dropdown list.
+CHLDEILD,ASSM2_D,D,8,Assessment Date 2,Date of Assessment 2.
+CHLDEILD,SRCE3_C,C,4,Source 3,Select from the dropdown list.
+CHLDEILD,ASMINST3_C,C,4,Assessment Instrument 3,Select from the dropdown list.
+CHLDEILD,ASSM3_D,D,8,Assessment Date 3,Date of Assessment 3.
+CHLDEILD,SRCE4_C,C,4,Source 4,Select from the dropdown list.
+CHLDEILD,ASMINST4_C,C,4,Assessment Instrument 4,Select from the dropdown list.
+CHLDEILD,ASSM4_D,D,8,Assessment Date 4,Date of Assessment 4.
+CHLDEILD,SRCE5_C,C,4,Source 5,Select from the dropdown list.
+CHLDEILD,ASMINST5_C,C,4,Assessment Instrument 5,Select from the dropdown list.
+CHLDEILD,ASSM5_D,D,8,Assessment Date 5,Date of Assessment 5.
+CHLDEILD,SRCE6_C,C,4,Source 6,Select from the dropdown list.
+CHLDEILD,ASMINST6_C,C,4,Assessment Instrument 6,Select from the dropdown list.
+CHLDEILD,ASSM6_D,D,8,Assessment Date 6,Date of Assessment 6.
+CHLDEILD,SRCE7_C,C,4,Source 7,Select from the dropdown list.
+CHLDEILD,ASMINST7_C,C,4,Assessment Instrument 7,Select from the dropdown list.
+CHLDEILD,ASSM7_D,D,8,Assessment Date 7,Date of Assessment 7.
+CHLDEILD,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CHLDEILD,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CHLDEILD,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+CHLDEILD,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+CHLDVSIT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+CHLDVSIT,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CHLDVSIT,VISIT_D,D,8,Visit Date,Date of the Visit to the Clinic.
+CHLDVSIT,SERV_TYP_C,C,4,Service Type Code,See Code Table - From Assessment Type.
+CHLDVSIT,HGT_FEET_N,N,1,Height - Feet,Child's height in feet.
+CHLDVSIT,HGT_INCH_N,N,2,Height - Inches,Child's height in inches.
+CHLDVSIT,HGT_QICH_N,N,1,Height - Quarter Inches,Child's height in quarter inches.
+CHLDVSIT,HGT_PCT_N,N,3,Height Growth Percentile,Height Growth Percentile based on child's height.
+CHLDVSIT,WGT_PNDS_N,N,3,Weight Pounds,Child's weight in pounds.
+CHLDVSIT,WGT_OZS_N,N,2,Weight Ounces,Child's weight in ounces.
+CHLDVSIT,WGT_PCT_N,N,2,Weight Growth Percentile,Weight Growth Percentile based on child's weight.
+CHLDVSIT,BP_DIA_N,N,3,Blood Pressure - Dia,Child's Diastolic Blood Pressure number.
+CHLDVSIT,BP_SYS_N,N,3,Blood Pressure - Sys,Child's Systolic Blood Pressure Number.
+CHLDVSIT,DIAG1_C,C,5,Diagnosis Code 1,See Code Table.
+CHLDVSIT,DIAG2_C,C,5,Diagnosis Code 2,Same as Above.
+CHLDVSIT,DIAG3_C,C,5,Diagnosis Code 3,Same as Above.
+CHLDVSIT,ANTHRO_D,D,8,Anthropometric Date,Date of Measurement.
+CHLDVSIT,HEMATCRT_N,N,4.1,Hematocrit,Hematocrit number.
+CHLDVSIT,HEMOGLBN_N,N,4.1,Hemoglobin,Hemoglobin number.
+CHLDVSIT,HEM_D,D,8,Hemoglobin/Hematocrit Date,Date of the Hemoglobin/Hematocrit reading.
+CHLDVSIT,HEADCIRC_N,N,4.1,Head Circumference,Child's head circumference.
+CHLDVSIT,HEAD_PCT_N,N,2,Head Circumference Percentile,Head Circumference Percentile based .on child's head circumference measurement.
+CHLDVSIT,DENTAL_F,C,1,Dental Screening Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,DEVEL_F,C,1,Developmental Screening Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,MENTAL_F,C,1,Mental Health Screening Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,HEARING_F,C,1,Hearing Screening Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,VISION_F,C,1,Vision Screening Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,SUBST_A_F,C,1,Substance Abuse Screening,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,TUBERC_F,C,1,Tuberculosis Screening,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,AGE_FMLA_N,N,2,Age of First Formula,Age infant started formula.
+CHLDVSIT,BRST_FED_F,C,1,Currently Breast-Feeding Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,BRFD_STP_D,D,8,Date Breast-Feeding Ceased,Date that breastfeeding stopped.
+CHLDVSIT,EVR_BRFD_F,C,1,Ever Breast-Fed Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,BFC_RSN_C,C,4,Reason B.F. Ceased,See Code Table.
+CHLDVSIT,VIT_MIN_C,C,4,Vitamin/Mineral Code,See Code Table.
+CHLDVSIT,SUPP_FDG_F,C,1,Supplemental Feeding,"""Y"" = Yes, ""N"" or Blank = No."
+CHLDVSIT,SUPP_FDG_D,D,8,Supplemental Feeding Date,Date Supplemental Feeding began.
+CHLDVSIT,PREN_EDC_D,D,8,Prenatal EDC Date,Mother's Estimated Date of Confinement .
+CHLDVSIT,ADJ_AGE_N,N,3,Adjusted Age,Child's adjusted age.
+CHLDVSIT,PREG_WKS_N,N,2,Pregnancy Weeks,How far along the pregnancy is in weeks.
+CHLDVSIT,HH_SMOKE_F,C,1,Household Smokers,"""Y"" = Yes, ""N"" or Blank = No, if anyone else living in the household smokes tobacco products."
+CHLDVSIT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CHLDVSIT,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CHLDVSIT,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+CHLDVSIT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+CLINADM,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+CLINADM,WRKDY_HR_N,N,4.1,Length of Regular Work Day,Total hours of a regular work day at the clinic.
+CLINADM,EXTDAYS_N,N,3,Number of Days after a Missed Service,The Number of Days Grace Period that should be applied to a missed Target Date: External.
+CLINADM,INTDAYS_N,N,3,Number of Days after a Missed ESRV,The Number of Days Grace Period that should be applied for a missed Service Target Date: Internal.
+CLINADM,CONDAYS_N,N,3,Number of Days after the Last Case Manager,The Maximum Number of Days for which a Participant can have no Case Management Contact.
+CLINADM,EDCDAYS_N,N,3,Number of Days after the Participant's EDC Date,The Number of Days past a Participant's EDC Date that should be the maximum Grace Period allowed.
+CLINADM,HFS_PRV_I,N,9,Medicaid Provider ID,Provider ID Number of the Agency itself.
+CLINADM,PARTIDX_F,C,1,Participant Reindex Flag,Select the Day of the Week to run the automated re-indexing process.
+CLINADM,CAREIDX_F,C,1,Care Plan Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,APPTIDX,C,1,Appointment Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,FIIDX_F,C,1,Food Instrument Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,CLINIDX_F,C,1,Clinic Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,GENIDX_F,C,1,General Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,MASTIDX_F,C,1,Master Index Reindex Flag,"""X"" = Run, blank = Do Not Run."
+CLINADM,LST_UPLD_D,D,8,Last Successful Upload Date,Date of Clinic's Last Successful Upload.
+CLINADM,LST_UPLD_H,N,4,Last Successful Upload Time,Time of Clinic's Last Successful Upload .
+CLINADM,LST_DNLD_D,D,8,Last Successful Download Date,Date of Clinic's Last Successful Download.
+CLINADM,LST_DNLD_H,N,4,Last Successful Download Time,Time of Clinic's Last Successful Download.
+CLINADM,LST_EOM_N,N,6,Second Day of Month Report Process,
+CLINADM,LST_EOM_N2,N,6,Last Day of Month Report Process,
+CLINADM,OVRIDBEG_D,D,8,Override EOD Begin Date,Displays a date change for the begin date.
+CLINADM,OVRIDEND_D,D,8,Override EOD End Date,Displays a date change for the end date.
+CLINADM,BEFLAG,C,1,End of Day/Beginning of Day Status Flag,Status Flag .
+CLINADM,LSTDATEPR,D,8,Last Date of Processing,The last date that processing was done.
+CLINADM,ERRORLINE,N,10,Last Error Record in the Error Database,Line Number of the last error record in the error database.
+CLINADM,ARLSTRUN_D,D,8,Archive Last Run Date,Date of last archive.
+CLINADM,LAST_UPD_D,D,8,Date Last Update,Date that record was last updated.
+CLINADM,ARC_REST_D,D,8,Full Archive Restore Date,Date of the full archive restore.
+CLINADM,LAST_EI_N,N,6,Last EI Number Used,Last EI Number assigned in the Clinic each day.
+CLINADM,FILTQLTY_F,C,1,FI Printing (Single/Double Strike),"""S"" = Single Strike.
+""D"" = Double Strike."
+CLINIC,CLINICID_I,C,6,Clinic ID,Unique Clinic Number assigned by Cornerstone.
+CLINIC,AGENCY_I,C,6,Agency ID,Same number as the Clinic Number.
+CLINIC,CM_AGENCY,C,6,Case Management Agency,Case Management Agency ID.
+CLINIC,REGION_C,C,4,Region,"Region numbers are 1 - 8, See Code Table."
+CLINIC,CLINICSZ_C,C,4,Clinic Size,"""S"" = Small.
+""M"" = Medium.
+""L"" = Large."
+CLINIC,CLIN_NME_T,C,30,Clinic Name,Name of Clinic.
+CLINIC,FOOD_CTR_F,C,1,Food Center Indicator,"""Y"" = Yes, ""N"" = No."
+CLINIC,COMMENTS_M,M,4,Comments,Used to record additional notes.
+CLINIC,CM_AGEN_C,C,12,Case Management Agency Code,Unique code assigned to each Case Management Agency.
+CLINIC,ZIP_ASGN_F,C,1,Medmatch ZIP Code Assignment Flag,"""Y"" = Yes, ""N"" = No."
+CLINIC,TIMEBOD,C,8,Clinic Beginning of Date Start Time,Time that Auto-BOD will start at each clinic.
+CLINIC,ARACTIVE_F,C,1,Archive Active Flag,"""Y"" = Yes, ""N"" = No."
+CLINIC,ARDURMON_N,N,3,Archive Monthly Duration,
+CLINIC,ARRUNDAY_C,C,1,Archive Run Day,Day code that the Archive runs.
+CLINIC,ARSTRTME_C,C,8,Archive Start Time,Time that archive process starts.
+CLINIC,FASD_F,C,1,FASD Clinic,"""Y"" = Yes, ""N"" or Blank = No."
+CLINIC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+CLINIC,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+CLINIC,APORS_F,C,1,APROS Flag,"""Y"" = Yes, ""N"" or blank = No."
+CMCATGY,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+CMCATGY,PGM_ID_C,C,4,Program ID Code,"Used to determine the Program, See Code Table."
+CMCATGY,PGM_STAT_C,C,4,Program Status Code,"Used to determine participant's status in the Program, See Code Table."
+CMCATGY,OLD_CAT_C,C,4,Old Category Code,"Old Program Category Code, See Code Table."
+CMCATGY,NEW_CAT_C,C,4,New Category Code,"New Program Category Code, See Code Table."
+CMCATGY,LOCATN_N,N,2,Location Number,"Location Code, See Code Table."
+CMCATGY,LST_UPD_D,D,8,Last Update Date,Last date that this record was updated.
+CODETBL,CDE_NAME_T,C,10,Data Element Name,Internal Data Element Identifier for each of the 4 digit character code fields.
+CODETBL,CODE_VAL_C,C,4,Code Value,Code values for the encoded data elements.
+CODETBL,BRF_DESC_T,C,30,Brief Description,Description of each code value.
+CODETBL,EXP_DESC_M,M,4,Expanded Description,More detailed description of the Code Value.
+CODETBL,CDE_STAT_C,C,1,Code Status Code,Used to indicate if the code value is still active (valid for entry).
+CODETBL,CENTRAL_F,C,1,Central Office Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+CODETBL,LAST_UPD_D,D,8,Date Last Update,Last Central Office Update.
+CODETBL,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+COLRSCHM,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table.
+COLRSCHM,SCRNCOLR_C,C,254,Screen Color,Stores the numbers used to create the screen color.
+COLRSCHM,EDITCOLR_C,C,254,Edit Color,Stores the numbers used to create the color on the edit boxes.
+COLRSCHM,PPUPCOLR_C,C,254,Popup Color,Stores the numbers used to create the colors in the pop-up window.
+COLRSCHM,BKGROUND_C,C,16,Background Color,Stores the number used to create the color of the background.
+COLRSCHM,HDRCOLR_C,C,28,Header Color,Stores the number used to create the header color.
+COLRSCHM,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+COLRSCHM,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+DCFSWARD,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number .
+DCFSWARD,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+DCFSWARD,DCFS_CAS_I,C,8,DCFS Case ID Number,External DCFS case identifier.
+DCFSWARD,WORK_LST_T,C,15,DCFS Case Worker Last Name,Stores the Last Name of the DCFS Case Worker.
+DCFSWARD,WORK_FST_T,C,13,DCFS Case Worker First Name,Stores the First Name of the DCFS Case Worker.
+DCFSWARD,PHNE_WRK_N,N,12,DCFS Case Worker Phone Number,Stores the Phone Number of the DCFS Case Worker.
+DCFSWARD,PRO_CUST_D,D,8,Protective Custody Initiation Date,See Screen Definitions.
+DCFSWARD,TMPCST_I_D,D,8,Temporary Custody Initiation Date,Stores Temporary Custody Initiation Date..
+DCFSWARD,TMPCST_E_D,D,8,Temporary Custody End Date,Stores Temporary Custody End Date.
+DCFSWARD,INT_HLTH_D,D,8,Initial Health Visit Date,Stores Initial Health Visit Date.
+DCFSWARD,CMP_HLTH_D,D,8,Comprehensive Health Screening Date,Stores Comprehensive Health Screening Date.
+DCFSWARD,HLTH_PAS_D,D,8,Health Passport Initiated Date,Stores Health Passport Initiated Date.
+DCFSWARD,MEDC_EXP_D,D,8,Medical Consent Expiration Date,Stores Medical Consent Expiration Date.
+DCFSWARD,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+DCFSWARD,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+DCFSWARD,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+DCFSWARD,CO_UPD_D,D,8,Central Office Update Date,Last Update from Central Office.
+DCFSWARD,HIS_AVBL_F,C,1,Initial Health Screening Date Available,Stores Initial Health Screening Date Available.
+DCFSWARD,MIS_IHSD_C,C,2,Missed Initial Health Screening Reason,See Code Table.
+DCFSWARD,ACR_DATE_T,C,4,Date of Administrative Case Review,Stores Date of Administrative Case Review.
+DISTRICT,REGION,C,2,Region,See Code Table.
+DISTRICT,COUNTY,C,3,County,See Code Table.
+DISTRICT,DISTRICT,C,4,District,See Code Table.
+DISTRICT,DIST_TYP,C,2,District Type,See Code Table.
+DISTRICT,DIST_NAME,C,40,District Name,Stores the District Name information.
+DISTRICT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+DISTRICT,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+DOWNLD,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+DOWNLD,CTRL_PCS_D,D,8,Central Office Process Date,The Date that data was processed at Central Office.
+DOWNLD,MSG_C,C,4,Message Code,See Code Table for explanation of the different Message Codes.
+DOWNLD,TBL_NME_T,C,10,Table Name,Cornerstone Table Name.
+DOWNLD,PGM_ID_C,C,4,Program ID Code,See Code Table.
+DOWNLD,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+DOWNLD,O_CLINID_I,C,6,Other Clinic,Other Clinic ID Number.
+EIEDTRUL,CATEGORY_C,C,4,EI Category Code,See Code Table.
+EIEDTRUL,AUTH_TYP_C,C,4,Authorization Type,The Type of Authorization entered. See Code Table.
+EIEDTRUL,SERV_TYP_C,C,4,Service Type,The Service Type Code used. See Service Code Table.
+EIEDTRUL,METH_TYP_C,C,4,Method Type,The Method Type used. See Code Table. .
+EIEDTRUL,IFSP_LOC_C,C,4,IFSP Location,The Location of the IFSP Meeting. See Code Table.
+EIEDTRUL,PROCHIPA_C,C,5,Procedure Code HIPA,"See Appendix B, EI HIPAA Procedure Code Table for explanation of the different HIPA Procedure Codes."
+EIEDTRUL,MODIFR01_C,C,2,Modifier 1,EI Modifier Code 1.
+EIEDTRUL,MODIFR02_C,C,2,Modifier 2,EI Modifier Code 2.
+EIEDTRUL,MODIFR03_C,C,2,Modifier 3,EI Modifier Code 3.
+EIEDTRUL,MODIFR04_C,C,2,Modifier 4,EI Modifier Code 4.
+EIEDTRUL,PROV_CAT_C,C,4,Provider Category,See Code Table for descriptions of the Provider Category Codes.
+EIEDTRUL,CDE_STAT_C,C,1,Code Status,"""A"" = Active, ""I"" = Inactive."
+EIEDTRUL,FAMILY_F_F,L,1,Family Fee Flag,"""T"" = True, ""F"" = False."
+EIEDTRUL,PRIV_INS_F,L,1,Private Insurance Flag,"""T"" = True, ""F"" = False."
+EIEDTRUL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+EIEDTRUL,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EIPGM,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+EIPGM,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+EIPGM,ENTRY_D,D,8,Date of Record Entry,The Date that the EIPGM record was added.
+EIPGM,INTK_BEG_D,D,8,Intake Period Begin Date,The Date that the Intake Period Begins.
+EIPGM,INTK_END_D,D,8,Intake Period end Date,The Date that the Intake Period Ends.
+EIPGM,ITRM_BEG_D,D,8,Interim IFSP Begin Date,The Date that the Interim IFSP Begins.
+EIPGM,ITRM_END_D,D,8,Interim IFSP End Date,The Date that the Interim IFSP Ends.
+EIPGM,ELIG_DET_D,D,8,Date of Eligibility Determination,The Date that the participant was determined to be eligible for Early Intervention Services.
+EIPGM,ELIG_DET_C,C,4,Eligibility Determination Code,The Eligibility Determination Code. See Code Table.
+EIPGM,DLAY_LVL_N,N,2,Percent of Delay,The Percentage of Delay of the participant.
+EIPGM,INT_IFSP_D,D,8,Initial IFSP Begin Date,The Date that the Initial IFSP Date Begins.
+EIPGM,BEG_IFSP_D,D,8,IFSP Begin Date,The Date that the IFSP Beings.
+EIPGM,END_IFSP_D,D,8,IFSP End Date,The Date that the IFSP Ends.
+EIPGM,AUTH_PRN_D,D,8,Last Authorization Print Date,The last date that the authorization was printed.
+EIPGM,NXT_FLWP_D,D,8,Next Followup Date,The next follow up date for this participant.
+EIPGM,FLWP_RSN_T,C,30,Followup Reason Code,The reason code for the follow up.
+EIPGM,PRIV_INS_C,C,4,Private Insurance Code,Stores if the participant has private insurance or not. See Code Table.
+EIPGM,DSCC_ELG_F,C,1,DSCC Eligible Flag,"""Y"" = Yes, ""N"" or blank = No."
+EIPGM,EIPGM_ST_C,C,4,Record Status Field,Status of the EIPGM record. See Code Table.
+EIPGM,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+EIPGM,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EIPGM,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+EIPGM,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+EIPGM,REGION,C,2,School Region,Auto-fills school region information.
+EIPGM,COUNTY,C,3,School County,Auto-fills school county information.
+EIPGM,DISTRICT,C,4,School District,Auto-fills school district information.
+EIPGM,DELAY_STAT,C,4,Delay Reason/Status,"If there was a delay in adding the IFSP information, the reason is selected in this field. See Code Table."
+EIPGM,DIST_TYPE,C,2,District Type,Auto-fills district type information.
+EIPGM,COUNTY_C,C,3,County Code,Auto-fills county code information.
+EIPGM,DISTRICT_C,C,5,District Code,Auto-fills district code information.
+EITRACK,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+EITRACK,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier.
+EITRACK,REF_SCHL_D,D,8,Date Referred to School,Stores Date that Participant was referred to School District/LEA.
+EITRACK,REF_DECL_D,D,8,Date Parent Declined,Stores the Date that the Parent Declined Referral.
+EITRACK,TRN_MTNG_D,D,8,Meeting Date,Stores the Transition Meeting Date.
+EITRACK,SCHOOLNAME,C,40,School Name,Stores the School Name.
+EITRACK,REGION,C,2,Region,School Region Information.
+EITRACK,COUNTY,C,3,County,School County Information.
+EITRACK,DISTRICT,C,4,District,School District Information.
+EITRACK,DIST_TYPE,C,2,District Type,District Type Code.
+EITRACK,SCREEN_D,D,8,Screening Date,Stores Screening Date.
+EITRACK,GRP_ASSM_D,D,8,Group Assessment Date,Stores Group Assessment Date.
+EITRACK,AC_PERF_D,D,8,Academic Performance Assessment Date,Stores the Scheduled Date for the Academic Performance Assessment.
+EITRACK,COMMUNIC_D,D,8,Communication Assessment Date,Stores the Scheduled Date for the Communication Assessment.
+EITRACK,GEN_INTL_D,D,8,General Intelligence Assessment Date,Stores the Scheduled Date for the General Intelligence Assessment.
+EITRACK,SOC_EMTH_D,D,8,Social Emotional Assessment Date,Stores the Scheduled Date for the Social Emotional Assessment.
+EITRACK,HEALTH_D,D,8,Health Assessment Date,Stores the Scheduled Date for the Health Assessment.
+EITRACK,HEARING_D,D,8,Hearing Assessment Date,Stores the Scheduled Date for the Hearing Assessment.
+EITRACK,VISION_D,D,8,Vision Assessment Date,Stores the Scheduled Date for the Vision Assessment.
+EITRACK,MOTOR_AB_D,D,8,Motor Abilities Assessment Date,Stores the Scheduled Date for the Motor Abilities Assessment.
+EITRACK,IEP_COMP_D,D,8,IEP Completed Date,Stores the Date that the IEP was completed.
+EITRACK,SERV_BEG_D,D,8,Service Begin Date,Stores the Date that Services Began.
+EITRACK,RSN_NO_SRV,M,10,Reason Service Did Not Begin,Text box where users can explain why the Services did not begin on the child's third birthday.
+EITRACK,EL_PRE_K_S,C,1,Special Education State Pre K Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,EL_PRE_K_C,C,20,Special Education State Pre K Comment,Entered from the Early Intervention to Early Childhood Tracking Form.
+EITRACK,EL_HEAD_S,C,1,Special Education Head Start Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,EL_HEAD_C,C,20,Special Education Head Start Comment,Entered from the Early Intervention to Early Childhood Tracking Form.
+EITRACK,EL_PRIV_S,C,1,Special Education Private Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,EL_PRIV_C,C,20,Special Education Private Comment,Entered from the Early Intervention to Early Childhood Tracking Form.
+EITRACK,EL_HOMEB_S,C,1,Special Education Homebound Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,EL_HOMEB_C,C,20,Special Education Homebound Comment,Entered from the Early Intervention to Early Childhood Tracking Form.
+EITRACK,EL_SP_ED_S,C,1,Special Education Self Contained Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,EL_SP_ED_C,C,20,Special Education Self Contained Comment,Entered from the Early Intervention to Early Childhood Tracking Form.
+EITRACK,NO_PRE_K_S,C,1,Not Special Ed State Pre K Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,NO_HEAD_S,C,1,Not Special Ed Head Start Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,NO_PRIV_S,C,1,Not Special Ed Private Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,NO_PRG_S,C,1,Not Special Ed No Program Desired Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,PRNT_DECL,C,1,Parent Declined Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EITRACK,DECL_RESN,C,20,Parent Declined Reason,Text box where users can give the reason the parent declined special services.
+EITRACK,DECL_SERV,C,20,Services Declined,Stores which services were declined.
+EITRACK,DECLINE_D,D,8,Date Declined,Date that parent declined special services.
+EITRACK,FORM_OPER,C,20,Completed By,Name of Employee who completed the tracking form.
+EITRACK,FORM_TITLE,C,20,Completed By Title,Title of Employee who completed the tracking form.
+EITRACK,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EITRACK,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+EITRACK,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+EITRACK,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+EITRACK,COUNTY_C,C,3,County Code,County Code Information.
+EITRACK,DISTRICT_C,C,5,District Code,Distict Code Information.
+ELIGRULE,PGM_ID_C,C,4,Program ID Code,See Code Table.
+ELIGRULE,EFF_FROM_D,D,8,Effective From Date,Start Date of Eligibility.
+ELIGRULE,EFF_THRU_D,D,8,Effective Through Date,End Date of Eligibility.
+ELIGRULE,SEX_C,C,4,Sex Code,See Code Table.
+ELIGRULE,CATEGORY_C,C,4,Category,See Code Table.
+ELIGRULE,HSEHLD_N,N,2,Household Size,Number living in the household
+ELIGRULE,MIN_AGE_N,N,2,Minimum Age,Minimum age eligible for program.
+ELIGRULE,MAX_AGE_N,N,2,Maximum Age,Maximum age eligible for program.
+ELIGRULE,MIN_INC_A,N,6,Minimum Income,Minimum income eligible for program.
+ELIGRULE,MAX_INC_A,N,6,Maximum Income,Maximum income eligible for progra.m.
+ELIGRULE,COMMENTS_M,M,4,Comments,Used to record additional notes.
+ELIGRULE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+ELIGRULE,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EMPL,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+EMPL,EMPL_ID_I,N,9,Employee ID,User ID of Agency Employee.
+EMPL,LAST_NME_T,C,15,Last Name,Employee's Last Name.
+EMPL,FRST_NME_T,C,13,First Name,Employee's First Name.
+EMPL,MI_INITL_T,C,1,Middle Initial,Employee's Middle Initial.
+EMPL,EMP_TITL_T,C,30,Title,Employee's Job Title.
+EMPL,JOB_FUNC_C,C,4,Job Function Code,See Code Table.
+EMPL,PROV_ID_I,N,9,Provider ID,Provider ID.
+EMPL,PROV_SFX_I,N,3,Provider Suffix,Provider Suffix ID.
+EMPL,EMP_STAT_C,C,4,Employee Status,See Code Table.
+EMPL,EMP_STRT_D,D,8,Start Date,Employee Start Date.
+EMPL,EMP_TERM_D,D,8,Termination Date,Employee Termination Date.
+EMPL,SUPV_EMP_I,N,9,Supervisor Employee ID,Link to Supervisor Employee Information.
+EMPL,EMPL_PSW_T,C,9,Password,Employee's Current Password.
+EMPL,PSW_EXPR_D,D,8,Password Expiration Date,Employee's Current Password Expiration Date.
+EMPL,LOG_IN_F,L,1,Logged In Indicator,"""T"" = Logged in to Cornerstone. ""F"" = Not Logged in to Cornerstone."
+EMPL,LPSW_LOC_I,N,2,Password Location Field,Location of Password.
+EMPL,PSW_HT01_T,C,9,Password History Field 1,Most Recent Password.
+EMPL,PSW_HT02_T,C,9,Password History Field 2,Next Most Recent Password.
+EMPL,PSW_HT03_T,C,9,Password History Field 3,Next Most Recent Password.
+EMPL,PSW_HT04_T,C,9,Password History Field 4,Next Most Recent Password.
+EMPL,PSW_HT05_T,C,9,Password History Field 5,Next Most Recent Password.
+EMPL,PSW_HT06_T,C,9,Password History Field 6,Next Most Recent Password.
+EMPL,PSW_HT07_T,C,9,Password History Field 7,Next Most Recent Password.
+EMPL,PSW_HT08_T,C,9,Password History Field 8,Next Most Recent Password.
+EMPL,PSW_HT09_T,C,9,Password History Field 9,Next Most Recent Password.
+EMPL,PSW_HT10_T,C,9,Password History Field 10,Next Most Recent Password.
+EMPL,PSW_HT11_T,C,9,Password History Field 11,Next Most Recent Password.
+EMPL,PSW_HT12_T,C,9,Password History Field 12,Next Most Recent Password.
+EMPL,PSW_HT13_T,C,9,Password History Field 13,Next Most Recent Password.
+EMPL,PSW_HT14_T,C,9,Password History Field 14,Next Most Recent Password.
+EMPL,PSW_HT15_T,C,9,Password History Field 15,Next Most Recent Password.
+EMPL,LIAISON_F,C,1,Liaison Flag,Indicates whether or not Employee is the Cornerstone Liaison.
+EMPL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+EMPL,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EMPL,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+EMPL,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+EMPLMSG,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table.
+EMPLMSG,MSGID_I,C,8,Message ID,BOD Message ID.
+EMPLMSG,OPEN_F,C,1,Open Flag,Records if the BOD Message has been opened.
+EMPLMSG,OPEN_D,D,8,Open Date,Stores the Date that the BOD Message was opened.
+EMPLMSG,READ_F,C,1,Read Flag,Records if the BOD Message has been marked as 'Have Read'.
+EMPLMSG,READ_D,D/T,8,Read Date,Stores the BOD Message read date.
+EMPLPROG,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+EMPLPROG,EMPL_ID_I,N,9,Employee ID,Employee ID .
+EMPLPROG,PGM_ID_C,C,4,Program ID Code,Programs to which the Employee is Assigned - See Code Table.
+EMPLPROG,EPG_STAT_C,C,4,Employee/Program Status Code,Historical Status within each Program.
+EMPLPROG,PGMSTART_D,D,8,Program Start Date,Stores the date that the Employee starts a Program.
+EMPLPROG,PGMEND_D,D,8,Program End Date,Stores the date that the Employee is Terminated from a program.
+EMPLPROG,LAST_UPD_D,D,8,Date Last Update,Last Update of This Record.
+EMPLPROG,UPLOAD_F,C,1,Upload Indicator,See Code Table.
+EMPLPROG,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EMPLPROG,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office.
+EMPLSECR,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table.
+EMPLSECR,SCRN_ID_C,C,4,Screen ID Code,Screen ID.
+EMPLSECR,SECR_INQ_F,C,1,Security Inquiry Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+EMPLSECR,SECR_ADD_F,C,1,Security Add Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+EMPLSECR,SECR_UPD_F,C,1,Security Update Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+EMPLSECR,SECR_DEL_F,C,1,Security Delete Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+EMPLSECR,SECR_SUP_F,C,1,Security Supervisory Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No."
+EMPLSECR,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record.
+EMPLSECR,OPERATOR_I,N,9,Operator ID,User Making Last Update.
+EODBODHS,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number.
+EODBODHS,PROCESS_C,C,1,Process,EOD or BOD.
+EODBODHS,TYPE_C,C,1,Type,Auto EOD/BOD or Manual BOD/Manual EOD.
+EODBODHS,DTIME_T,DT,8,Date and Time Run,Date and Time information for EOD process or BOD process.
+EODBODHS,SUCCESS_F,C,1,Successful Flag,"""Y"" = Yes, ""N"" or Blank = No."
+EODBODHS,MAC_C,C,17,Mac Address,Physical IP Address of the workstation
+EODBODHS,OS_C,C,15,Operating System,Type of Operating System on the workstation
+EODBODHS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+EODBODHS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+EODBODHS,UPLOAD_F,C,1,Upload Indicator,See Code Table
+EODBODHS,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+EODBODMS,E_DATE,D,8,End of Day Date,Date of EOD process or BOD process
+EODBODMS,E_TIME,C,8,End of Day Time,Time that EOD process or BOD process ran
+EODBODMS,E_MESS,C,50,End of Day Message,Describes what is occurring as EOD and BOD are running
+EODBODMS,E_DESC,M,10,End of Day Description,Memo field that contains further details
+EPSDTVST,PART_AGE,N,3,Participant Age,Participant's Age
+EPSDTVST,NEXT_VISIT,N,3.1,Next Visit,Next Visit Date
+FAMFEE,FAM_FEE_A,N,6.2,Family Fee Authorized Amount,Family Fee amount
+FAMFEE,HSEHLD_N,N,2,Household Size,Number of People Living in the Household
+FAMFEE,MIN_INC_A,N,6,Minimum Income,Minimum Income Amount Eligible
+FAMFEE,MAX_INC_A,N,6,Maximum Income,Maximum Income Amount Eligible
+FAMFEE,ADD_MIN_A,N,6,Additional Min Amount for Fam Size &gt; 5,Additional Minimum Fee Amount for Families with more than 5 people.
+FAMFEE,ADD_MAX_A,N,6,Additional Max Amount for Fam Size &gt; 5,Additional Maximum Fee Amount for Families with more than 5 people.
+FAMFEE,EFF_FROM_D,D,8,Effective From Date,Fee Effective Begin Date
+FAMFEE,EFF_THRU_D,D,8,Effective Through Date,Fee Effective End Date
+FAMFEE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FAMFEE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FASDINTV,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+FASDINTV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+FASDINTV,EDC_D,D,8,EDC Date,Participant's EDC Date
+FASDINTV,SERVICE_D,D,8,Service Date,Date of the Service
+FASDINTV,PRS_GL_C,C,4,Drinking Goals,Participant's goals to reduce or quit drinking
+FASDINTV,PRS_MXDR_N,N,3,Maximum Drinks per Week,The maximum number of drinks per week that the participant consumes.
+FASDINTV,PRS_ITVM_N,N,3,Alcohol Intervention in Minutes,"The length, in minutes, of an intervention."
+FASDINTV,PRS_HIPA_F,C,1,Sign HIPAA Consent Form,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,PRS_SHRD_F,C,1,Share Record with Child's Doctor,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,PRS_ASST_F,C,1,Type of Assistance,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,PRS_APPT_F,C,1,Date of Appointment,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,PRS_ASST_C,C,4,Type of Assistance,"See Code Table for Assistance Type descriptions
+Cde_name_t = fasd_astyp"
+FASDINTV,PRS_APT_D,D,8,Appointment Date,Date of appointment for assistance to stop drinking
+FASDINTV,PRS_APT_T,C,6,Appointment Time,Time of appointment for assistance to stop drinking
+FASDINTV,PRS_ATTD_F,C,1,Attended First Appointment,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,PRS_CMT_M,M,4,Comments,Used to record additional notes
+FASDINTV,FV_FLWUP_D,D,8,Date of Follow Up,Date of Follow-Up Visit
+FASDINTV,FV_DRNKS_N,N,3,Four or More Drinks,Record participant's numeric answer
+FASDINTV,FV_DRKPD_N,N,3,Number of Drinks per Day,Record participant's numeric answer
+FASDINTV,FV_DAYS_N,N,3,Number of Days had a Drink,Record participant's numeric answer
+FASDINTV,FV_FSTVS_F,C,1,Drinks Since First Visit,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,RF_FLWUP_D,D,8,Follow up Date Since Referred,Date of Follow-Up Visit
+FASDINTV,RF_ATAPT_F,C,1,Attended Referral Appointment,"""Y"" = Yes, ""N"" or Blank = No"
+FASDINTV,RF_SRC_C,C,4,Source of Referral,"See Code Table for Source of Referral code descriptions
+Cde_name_t = fasd_srinf"
+FASDINTV,RF_RSN_M,M,4,Referral Reason,Record additional notes
+FASDINTV,RF_EXIT_D,D,8,Exit Date,Date participant exited alcohol treatment or stopped obtaining assistance
+FASDINTV,RF_VSATT_N,N,3,Number of Visits Attended,Record participant's numeric answer
+FASDINTV,RF_CMPLT_C,C,4,participant Completed Alcohol Treatment,"""1"" = Yes
+""2"" = No
+""3"" = Don't know"
+FASDINTV,RF_CMT_M,M,4,Comments,Used to record additional notes
+FASDINTV,CB_FLWUP_D,D,8,Follow up Date After Child Birth,Date for follow up appointment after child is born.
+FASDINTV,CB_RCSNT_F,C,1,participants Records sent to Child's Doctor,"""Y"" = Yes, ""N"" or blank = No"
+FASDINTV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FASDINTV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FASDINTV,UPLOAD_F,C,1,Upload Indicator,See Code Table
+FASDINTV,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+FEEHIST,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+FEEHIST,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+FEEHIST,ENTRY_D,D,8,EIPGM Date of Record Entry,Date EIPGM record was added to Cornerstone
+FEEHIST,BEG_FEE_D,D,8,Family Fee Period Begin Date,Date the Family Fee Period Begins
+FEEHIST,END_FEE_D,D,8,Family Fee Period End Date,Date the Family Fee Period Ends
+FEEHIST,EFF_FROM_D,D,8,Effective From Date,Begin Date that Fee is effective.
+FEEHIST,EFF_THRU_D,D,8,Effective To Date,End Date that Fee is effective
+FEEHIST,HSEHLD_N,N,2,Household Size,Number of People Living in the Household
+FEEHIST,HSE_INC_A,N,6,Household Income,Total Income in the Household
+FEEHIST,INC_PRF_C,C,4,Proof of Income Code,See Code Table for Proof of Income Code descriptions
+FEEHIST,FAM_FEE_A,N,6.2,Family Fee Amount,Amount of Fee Applied
+FEEHIST,CHNG_RSN_C,C,4,Reason for Fee Change Code,"If a change in the Family Fee has occurred, the reason is stored in this field. See Code Table"
+FEEHIST,FR_LNAME_T,C,30,Last Name of Financially Responsible Person,Stores the Last Name of the Financially Responsible Person for billing purposes.
+FEEHIST,FR_FNAME_T,C,14,First Name of Financially Responsible Person,Stores the First Name of the Financially Responsible Person for billing purposes.
+FEEHIST,FR_SSN_T,C,9,SSN of Financially Responsible Person,Stores the Social Security Number of the Financially Responsible Person for billing purposes.
+FEEHIST,UPLOAD_F,C,1,Upload Indicator,See Code Table
+FEEHIST,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FEEHIST,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FEEHIST,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+FIRANGE,BEG_RNGE_N,N,8,Begin Range,"FI Range Starting Number, generally the first FI in the printer."
+FIRANGE,END_RNGE_N,N,8,End Range,FI Range Ending Number
+FIRANGE,FI_RECVD_D,D,8,Date Received,Date that the clinic received the FIs.
+FIRANGE,COMMENTS_M,C,50,Comments,Used to record additional notes
+FIRANGE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FIRANGE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FIREGNL,FP_NBR_I,C,3,Food Package Number,The unique number used to identify the Food Package.
+FIREGNL,FI_NBR_T,C,1,Food Instrument Number,The unique number used to identify the Food Instrument
+FIREGNL,REGION_C,C,4,Region,Region Code. See Code Table
+FIREGNL,FI_PRICE_A,N,6.2,Price,Price information for the food instrument
+FIREGNL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FIREGNL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FIREGNL2,FP_NPR_I,C,3,Food Package Number,The unique number used to identify the Food Package
+FIREGNL2,FI_NBR_T,C,1,Food Instrument Number,The unique number used to identify the Food Instrument
+FIREGNL2,REGION_C,C,4,Region,Region Code. See Code Table
+FIREGNL2,FI_PRICE_A,N,6.2,Price,Price information of the Food Instrument
+FIREGNL2,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FIREGNL2,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FOODPKG,FP_NBR_I,C,3,Food Package Number,The unique number used to identify the Food Package
+FOODPKG,FI_NBR_T,C,1,Food Instrument Number,The unique number used to identify the Food Instrument
+FOODPKG,FI_QTY_N,N,3,Food Instrument Quantity,Amount of food products available with the Food Instrument
+FOODPKG,FI_DESC1_T,C,34,Food Instrument Description,Description of the food products available
+FOODPKG,FI_DESC2_T,C,34,Food Instrument Description,Description of the food products available
+FOODPKG,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FOODPKG,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FOODPKG2,FP_NBR_I,C,3,Food Package Number,The unique number used to identify the Food Package
+FOODPKG2,FI_NBR_T,C,1,Food Instrument Number,The unique number used to identify the Food Instrument
+FOODPKG2,FI_QTY_N,N,3,Food Instrument Quantity,Amount of food products available with the Food Instrument
+FOODPKG2,FI_DESC1_T,C,34,Food Instrument Description,Description of the food products available
+FOODPKG2,FI_DESC2_T,C,34,Food Instrument Description,Description of the food products available
+FOODPKG2,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FOODPKG2,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FOOT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+FOOT,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+FOOT,VISIT_D,D,8,Visit Date,Date of Visit to Clinic
+FOOT,FT_SIDE_F,C,1,Foot Flag (Left/Right),Field to indicate whether the left or right foot is being evaluated.
+FOOT,RISK_CAT_C,C,1,Risk Category,"See Code Table for Risk Category descriptions
+Cde_name_t = risk_ft_c"
+FOOT,COMMENTS,M,10,Comments,Used to record additional notes
+FOOT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FOOT,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FOOT,UPLOAD_F,C,1,Upload Indicator,See Code Table
+FOOT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+FORMTYPE,FORM_TYP_C,C,4,Form Type Code,Type of Form used
+FORMTYPE,FRM_DESC_T,C,30,Format Description,Description of the Form
+FORMTYPE,EDIT_F,C,1,Edit Indicator,"""Y"" = Yes, ""N"" = No"
+FORMTYPE,EDT_TIME_N,N,3,Edit Time Period,Amount of days until note can no longer be edited
+FORMTYPE,MOD_FRMT_F,C,1,User Modifiable Format Flag,"""Y"" = Yes, ""N"" = No"
+FORMTYPE,FRM_TMPT_M,M,10,Format Template,Template for the form
+FORMTYPE,CDE_STAT_C,C,1,Format Status Code,"""A"" = Active, ""I"" = Inactive"
+FORMTYPE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+FORMTYPE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+FP25EROR,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+FP25EROR,ER_NO,N,5,Error Number,Unique number to identify the error message
+FP25EROR,ER_MSG,C,80,Error Message,The error that occurred
+FP25EROR,KODE,C,120,Procedure Code,The procedure that was open when the error occurred.
+FP25EROR,LINE_NO,N,7,Line Number,"In the source code, the line number where the error occurred."
+FP25EROR,MMODUL,C,80,Module,Source Code location
+FP25EROR,DDATE,D,8,Date,Date that the error occurred.
+FP25EROR,TTIME,C,8,Time,Time that the error occurred.
+FP25EROR,LAN_USER,C,12,LAN User,IP Address of workstation that error occurred on.
+FP25EROR,OS,C,15,Operating System,Operating System information of the workstation that the error occurred on.
+FP25EROR,MAC,C,17,Computer MAC Address,The physical IP address of the workstation that the error occurred on.
+FP25EROR,UPLOAD_F,C,1,Upload Indicator,See Code Table
+FP25EROR,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+FP25EROR,NOTES,M,4,Notes Field,Used to store additional comments or notes
+GENETICS,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+GENETICS,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+GENETICS,VISIT_D,D,8,Visit Date,Date
+GENETICS,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table
+GENETICS,SRCERFRL_C,C,4,Source of Referral,See Code Table
+GENETICS,RFRL_D,D,8,Referral Date,Date of Referral
+GENETICS,APPT_D,D,8,Appointment Date,Referral Appointment Date
+GENETICS,APPTKEPT_F,C,1,Appointment Kept,"""Y"" = Yes, ""N"" or blank = No"
+GENETICS,RFRD_TO_T,C,30,Referred To,Used to record name of doctor
+GENETICS,PRI_DIAG_C,C,4,Primary Diagnosis Code,"See Code Table for Primary Diagnosis Code descriptions
+Cde_name_t = pri_diag_c"
+GENETICS,FLWUP1_D,D,8,Follow Up Attempt 1 Date,Date of first follow up attempt
+GENETICS,FLWUP2_D,D,8,Follow Up Attempt 2 Date,Date of second follow up attempt
+GENETICS,FLWUP3_D,D,8,Follow Up Attempt 3 Date,Date of third follow up attempt
+GENETICS,COMMENTS_M,M,4,Comments,Used to record additional notes
+GENETICS,NBSPI01_F,C,1,Newborn Screening Positive Indicator 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI02_F,C,1,Newborn Screening Positive Indicator 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI03_F,C,1,Newborn Screening Positive Indicator 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI04_F,C,1,Newborn Screening Positive Indicator 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI05_F,C,1,Newborn Screening Positive Indicator 5,Checkmark = Yes
+GENETICS,NBSPI06_F,C,1,Newborn Screening Positive Indicator 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI07_F,C,1,Newborn Screening Positive Indicator 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI08_F,C,1,Newborn Screening Positive Indicator 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI09_F,C,1,Newborn Screening Positive Indicator 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI10_F,C,1,Newborn Screening Positive Indicator 10,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI11_F,C,1,Newborn Screening Positive Indicator 11,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI12_F,C,1,Newborn Screening Positive Indicator 12,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSPI13_F,C,1,Newborn Screening Positive Indicator 13,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED01_F,C,1,Newborn Screening Education Materials 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED02_F,C,1,Newborn Screening Education Materials 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED03_F,C,1,Newborn Screening Education Materials 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED04_F,C,1,Newborn Screening Education Materials 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED05_F,C,1,Newborn Screening Education Materials 5,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED06_F,C,1,Newborn Screening Education Materials 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED07_F,C,1,Newborn Screening Education Materials 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED08_F,C,1,Newborn Screening Education Materials 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED09_F,C,1,Newborn Screening Education Materials 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED10_F,C,1,Newborn Screening Education Materials 10,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED11_F,C,1,Newborn Screening Education Materials 11,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED12_F,C,1,Newborn Screening Education Materials 12,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,NBSED13_F,C,1,Newborn Screening Education Materials 13,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI01_F,C,1,Other Positive Indicator 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI02_F,C,1,Other Positive Indicator 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI03_F,C,1,Other Positive Indicator 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI04_F,C,1,Other Positive Indicator 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI05_F,C,1,Other Positive Indicator 5,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI06_F,C,1,Other Positive Indicator 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI07_F,C,1,Other Positive Indicator 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI08_F,C,1,Other Positive Indicator 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI09_F,C,1,Other Positive Indicator 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI10_F,C,1,Other Positive Indicator 10,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI11_F,C,1,Other Positive Indicator 11,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHPI12_F,C,1,Other Positive Indicator 12,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED01_F,C,1,Other Education Materials 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED02_F,C,1,Other Education Materials 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED03_F,C,1,Other Education Materials 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED04_F,C,1,Other Education Materials 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED05_F,C,1,Other Education Materials 5,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED06_F,C,1,Other Education Materials 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED07_F,C,1,Other Education Materials 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED08_F,C,1,Other Education Materials 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED09_F,C,1,Other Education Materials 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED10_F,C,1,Other Education Materials 10,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED11_F,C,1,Other Education Materials 11,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHED12_F,C,1,Other Education Materials 12,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI01_F,C,1,Chronic Positive Indicator 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI02_F,C,1,Chronic Positive Indicator 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI03_F,C,1,Chronic Positive Indicator 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI04_F,C,1,Chronic Positive Indicator 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI06_F,C,1,Chronic Positive Indicator 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI07_F,C,1,Chronic Positive Indicator 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI08_F,C,1,Chronic Positive Indicator 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRPI09_F,C,1,Chronic Positive Indicator 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED01_F,C,1,Chronic Education Materials 1,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED02_F,C,1,Chronic Education Materials 2,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED03_F,C,1,Chronic Education Materials 3,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED04_F,C,1,Chronic Education Materials 4,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED05_F,C,1,Chronic Education Materials 5,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED06_F,C,1,Chronic Education Materials 6,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED07_F,C,1,Chronic Education Materials 7,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED08_F,C,1,Chronic Education Materials 8,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,CHRED09_F,C,1,Chronic Education Materials 9,"Checkmark = Yes
+No checkmark or blank = No"
+GENETICS,OTHER_T,C,30,Other Chronic Disease,Field to enter comments or notes
+GENETICS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+GENETICS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+GENETICS,UPLOAD_F,C,1,Upload Indicator,See Code Table
+GENETICS,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+GOALSERV,GOAL_C,C,4,Goal Code,Unique Goal Code
+GOALSERV,SERV_TYP_C,C,4,Service Type Code,Suggested Service Codes
+GOALSERV,LAST_UPD_D,D,8,Date Last Update,Last Update of This Record
+GOALSERV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+GRPXREF,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+GRPXREF,PART_PRM_I,C,14,Participant ID - Primary,Cornerstone Participant Identifier for the Group Head
+GRPXREF,PART_SEC_I,C,14,Participant ID - Secondary,Participant ID for each member of the Family Group
+GRPXREF,EFF_FROM_D,D,8,Effective From Date,When they became a group member
+GRPXREF,EFF_THRU_D,D,8,Effective Thru Date,When they left the group
+GRPXREF,RELATE_C,C,4,Relationship Code of Primary to Secondary,See Code Table
+GRPXREF,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+GRPXREF,OPERATOR_I,N,9,Operator ID,User Making Last Update
+GRPXREF,UPLOAD_F,C,1,Upload Indicator,See Code Table
+GRPXREF,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+HLTHVSIT,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+HLTHVSIT,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+HLTHVSIT,VISIT_D,D,8,Visit Date,Date Health Visit record was added
+HLTHVSIT,SERV_TYP_C,C,4,Service Type Code,See Code Table - From Assessment Type
+HLTHVSIT,HGT_FEET_N,N,1,Height - Feet,Participant's height in feet
+HLTHVSIT,HGT_INCH_N,N,2,Height - Inches,Participant's height in inches
+HLTHVSIT,HGT_QICH_N,N,1,Height - Quarter - Inches,Participant's height in quarter inches
+HLTHVSIT,WGT_PNDS_N,N,3,Weight - Pounds,Participant's weight in pounds
+HLTHVSIT,WGT_OZS_N,N,2,Weight - Ounces,Participant's weight in ounces
+HLTHVSIT,BP_DIA_N,N,3,Blood Pressure - Diastolic,Diastolic Blood Pressure measurement
+HLTHVSIT,BP_SYS_N,N,3,Blood Pressure - Systolic,Systolic Blood Pressure measurement
+HLTHVSIT,DIAG1_C,C,5,Diagnosis Code 1,See Code Table
+HLTHVSIT,DIAG2_C,C,5,Diagnosis Code 2,Same as Above
+HLTHVSIT,DIAG3_C,C,5,Diagnosis Code 3,Same as Above
+HLTHVSIT,ANTHRO_D,D,8,Anthropometric Date,Date of Measurement
+HLTHVSIT,HEMATCRT_N,N,4.1,Hematocrit,Hematocrit measurement
+HLTHVSIT,HEMOGLBN_N,N,4.1,Hemoglobin,Hemoglobin measurement
+HLTHVSIT,HEM_D,D,8,Hemoglobin/Hematocrit Date,Date of Hemoglobin/Hematocrit measurement
+HLTHVSIT,WKS_GEST_N,N,2,Weeks Gestation,Number of Weeks Gestation
+HLTHVSIT,URN_PROT_C,C,4,Urine Protein,"""NEG"" or ""POS"""
+HLTHVSIT,EDEMA_F,C,1,Edema Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+HLTHVSIT,FETLMVMT_C,C,4,Fetal Movement,"""YES"" or ""NO"""
+HLTHVSIT,FUND_HGT_N,N,3,Fundal Height,"Enter the measurement, if known"
+HLTHVSIT,FHR_C,C,4,Fetal Heart Rate Method Code,See Code Table
+HLTHVSIT,FHR_RSLT_N,N,3,Fetal Heart Rate Result,Enter the numeric result
+HLTHVSIT,CUR_SMK_F,C,1,Current Smoking Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+HLTHVSIT,CHG_SMK_C,C,4,Change In Smoking Code,See Code Table
+HLTHVSIT,CIGS_DAY_N,N,2,Number Of Cigarettes Per Day,Total number of cigarettes smoked per day by participant
+HLTHVSIT,OTH_SMK_F,C,1,Others In Household Smoking,"""Y"" = Yes, ""N"" or Blank = No"
+HLTHVSIT,INTERV_F,C,1,Intervention Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+HLTHVSIT,CUR_DRNK_F,C,1,Currently Drinking Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+HLTHVSIT,DAYS_WK_N,N,1,Number Of Days A Week Drinking,Total number of days per week participant drinks alcohol
+HLTHVSIT,DR_DY_WK_N,N,2,Number Of Drinks Per Day,Total number of drinks per day that participant has.
+HLTHVSIT,VIT_MIN_C,C,4,Vitamin/Mineral Code,See Code Table
+HLTHVSIT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+HLTHVSIT,OPERATOR_I,N,9,Operator ID,User Making Last Update
+HLTHVSIT,UPLOAD_F,C,1,Upload Indicator,See Code Table
+HLTHVSIT,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+HOSPITAL,HOSP_CODE,C,4,Hospital Code,See Code Table
+HOSPITAL,HOSPITAL,C,50,Hospital Name,Name of Hospital
+HOSPITAL,CITY,C,15,Hospital City,Hospital City. See Code Table
+HOSPITAL,STATE,C,2,Hospital State,Hospital State. See Code Table
+HOSPITAL,COUNTY_C,C,4,Hospital County,Hospital County. See Code Table.
+HOSPITAL,BRTH_TYP_C,C,4,Birth Type Code,See Code Table
+HOSPITAL,CDE_STAT_C,C,1,Code Status,"""A"" = Active, ""I"" = Inactive"
+HOSPITAL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+HOSPITAL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+HSEHLD,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier for other Household Members
+HSEHLD,MBR_END_D,D,8,Member End Date,End Date when member stopped living in the household
+HSEHLD,MBR_NME_T,C,25,Member Name,Records First Name and Last Name of other members living in the household who are not enrolled in Cornerstone
+HSEHLD,MBR_ID_1,C,14,Member Participant ID,Used if they are also a Cornerstone participant
+HSEHLD,RELATE_C,C,4,Member Relationship,See Code Table
+HSEHLD,MBR_BEGN_D,D,8,Member Begin Date,Begin Date that member began living in the household
+HSEHLD,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+HSEHLD,OPERATOR_I,N,9,Operator ID,User Making Last Update
+IMMCOMBO,IMMGRP1,C,4,Immunization Group 1,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP2,C,4,Immunization Group 2,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP3,C,4,Immunization Group 3,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP4,C,4,Immunization Group 4,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP5,C,4,Immunization Group 5,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP6,C,4,Immunization Group 6,Used for tracking immunizations that are combo immunizations
+IMMCOMBO,IMMGRP7,C,4,Immunization Group 7,Used for tracking immunizations that are combo immunizations
+IMMGRPS,IMMTYP1,C,4,Immunization Type 1,Used for forecasting immunizations
+IMMGRPS,IMMTYP2,C,4,Immunization Type 2,Used for forecasting immunizations
+IMMGRPS,IMMTYP3,C,4,Immunization Type 3,Used for forecasting immunizations
+IMMGRPS,IMMTYP4,C,4,Immunization Type 4,Used for forecasting immunizations
+IMMGRPS,IMMTYP5,C,4,Immunization Type 5,Used for forecasting immunizations
+IMMGRPS,IMMTYP6,C,4,Immunization Type 6,Used for forecasting immunizations
+IMMGRPS,IMMTYP7,C,4,Immunization Type 7,Used for forecasting immunizations
+IMMGPRS,IMMTYP8,C,4,Immunization Type 8,Used for forecasting immunizations
+IMMGRPS,IMMTYP9,C,4,Immunization Type 9,Used for forecasting immunizations
+IMMNINV,,,,See Supplemental Information for Immunization Biologic Inventory Table,
+IMMNINV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+IMMNINV,LOT_NBR_T,C,10,Lot Number,Unique manufacturer's number listed on a vial of vaccine referring to a particular batch of the product.
+IMMNINV,IMMN_TYP_C,C,4,Immunization Type,Type of Immunization. See Code Table
+IMMNINV,REFR_MFG_T,C,50,Reference/Manufacturer,Manufacturer of the immunization
+IMMNINV,IMMN_RCV_D,D,8,Date Received,Date immunization was received at the clinic.
+IMMNINV,IMMN_EXP_D,D,8,Expiration Date,Date the immunization expires.
+IMMNINV,EXPR_DSE_N,N,6,Doses Expired,The total number of expired doses of the immunization
+IMMNINV,RECV_DSE_N,N,6,Doses Received,The total number of doses of the immunization received at the clinic.
+IMMNINV,RECV_FRM_T,C,10,Received From,From who/where the doses were received
+IMMNINV,TRNF_DSE_N,N,6,Doses Transferred,The total number of doses transferred to another site.
+IMMNINV,TRNF_PRV_I,C,9,Transfer Doses to Provider,Provider ID
+IMMNINV,USED_DSE_N,N,6,Doses Used,The total number of doses used at the site
+IMMNINV,WSTE_DSE_N,N,6,Doses Wasted,The total number of doses wasted at the site
+IMMNINV,ADJSTMNT_N,N,6,Adjustments,Adjustments can be made to the numbers if the physical count of immunizations at the site does not match what has been entered into Cornerstone due to data entry errors or miscounting of doses.
+IMMNINV,PRI_PUR_F,C,1,Private Purchase Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+IMMNINV,COST_DOS_A,N,5.2,Cost per Dose,The cost of each dose of the immunization.
+IMMNINV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+IMMNINV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+IMMNINV,UPLOAD_F,C,1,Upload Indicator,See Code Table
+IMMNINV,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+IMMNLOG,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+IMMNLOG,IMMN_TYP_C,C,4,Immunization Type Code,The Type of Immunization. See Code Table.
+IMMNLOG,LOT_NBR_T,C,10,Lot Number,Lot Number of the immunization
+IMMNLOG,LOG_TYP_T,C,4,Transaction Log Type,
+IMMNLOG,DSE_CNT_N,N,6,Amount of Doses,Numeric Amount. The number of doses available in the lot.
+IMMNLOG,IMMN_RCV_D,D,8,Date Immunization Received,Date that the Immunization was received at the clinic.
+IMMNLOG,COMMENTS_M,M,10,Comments,Used to record additional notes
+IMMNLOG,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+IMMNLOG,OPERATOR_I,N,9,Operator ID,User Making Last Update
+IMMNLOG,UPLOAD_F,C,1,Upload Indicator,See Code Table
+IMMNLOG,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+IMMNRULE,IMMN_TYP_C,C,4,Immunization Type,The unique number assigned to the immunization. See Code Table for Immunization Type Code descriptions.
+IMMNRULE,PRV_SHTS_N,N,2,Number of Previous Shots,
+IMMNRULE,C_AGE_FR_N,N,3,Current Age From,
+IMMNRULE,C_AGE_TH_N,N,3,Current Age Through,
+IMMNRULE,L_AGE_FR_N,N,3,Last Shot Age From,
+IMMNRULE,L_AGE_TH_N,N,3,Last Shot Age Through,
+IMMNRULE,F_AGE_FR_N,N,3,First Shot Age From,
+IMMNRULE,F_AGE_TH_N,N,3,First Shot Age Through,
+IMMNRULE,DTE_USE_C,C,4,Date to Use,
+IMMNRULE,ADD_DAYS_N,N,4,Forecasts Add Days,
+IMMNRULE,MIN_AGE_N,N,3,Minimum Age,
+IMMNRULE,MIN_DAYS_N,N,3,Minimum Days Between Immunizations,
+IMMNRULE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+IMMNRULE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+IMMNSNGL,IMMNTYP1,C,4,Immunization Type 1,
+IMMNSNGL,IMMNTYP2,C,4,Immunization Type 2,
+IMMNSNGL,IMMNTYP3,C,4,Immunization Type 3,
+IMMNSNGL,IMMNTYP4,C,4,Immunization Type 4,
+IMMNSNGL,IMMNTYP5,C,4,Immunization Type 5,
+IMMUNE,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+IMMUNE,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+IMMUNE,IMMN_TYP_C,C,4,Immunization Type,Vaccination Shot Type - See Code Table
+IMMUNE,IMMN_D,D,8,Immunization Date,
+IMMUNE,IMMN_EST_F,C,1,Immunization Estimated Date Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+IMMUNE,OFF_SCHD_F,C,1,Off Schedule Flag Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+IMMUNE,PROV_ID_I,N,9,Provider ID,Links to Provider Table
+IMMUNE,PROV_NME_T,M,10,Provider Name,Provider name. Links to Provider table
+IMMUNE,LOCATION_N,N,2,Location Number,Location where immunization was given.
+IMMUNE,EXEMPT_C,C,4,Exemption Reason Code,See Code Table
+IMMUNE,LOT_NBR_T,C,10,Lot Number,Links to Biologic Inventory Table
+IMMUNE,REACTION_C,C,4,TB Result Reaction Code,See Code Table
+IMMUNE,SERV_PLC_C,C,4,Place of Service,See Code Table
+IMMUNE,COMMENTS_M,M,10,Comments,Used to record additional notes
+IMMUNE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+IMMUNE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+IMMUNE,UPLOAD_F,C,1,Upload Indicator,See Code Table
+IMMUNE,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+JTSCRSEC,JOB_FUNC_C,C,4,Job Function Code,See Code Table for Job Function Code descriptions
+JTSCRSEC,SCRN_ID_C,C,4,Screen ID Code,Cornerstone Screen ID
+JTSCRSEC,SECR_ADD_F,C,1,Security Add Indicator,"""Y"" = Yes, ""N"" or blank = No"
+JTSCRSEC,SECR_UPD_F,C,1,Security Upload Indicator,"""Y"" = Yes, ""N"" or blank = No"
+JTSCRSEC,SECR_INQ_F,C,1,Security Inquiry Indicator,"""Y"" = Yes, ""N"" or blank = No"
+JTSCRSEC,SECR_DEL_F,C,1,Security Delete Indicator,"""Y"" = Yes, ""N"" or blank = No"
+JTSCRSEC,SECR_SUP_F,C,1,Security Supervisory Indicator,"""Y"" = Yes, ""N"" or blank = No"
+JTSCRSEC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+JTSCRSEC,OPERATOR_I,N,9,Operator ID,User Making Last Update
+LAPTOP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+LAPTOP,DN_UP_FL_C,C,1,Download - Upload Flag,"""U"" = Uploaded
+""D"" = Downloaded"
+LAPTOP,DNLOAD_D,D,8,Download Date,Date of last Download
+LAPTOP,DNLOADTM_H,C,8,Download Time,Time of last Download
+LAPTOP,D_OPERAT_I,N,9,Download Operator ID,Operator ID of user that is downloaded
+LAPTOP,LOC1_N,N,2,Location 1 Number,Numeric answer
+LAPTOP,LOC2_N,N,2,Location 2 Number,Numeric answer
+LAPTOP,LOC3_N,N,2,Location 3 Number,Numeric answer
+LAPTOP,PRG1_C,C,4,Program 1,Program ID 1
+LAPTOP,PRG2_C,C,4,Program 2,Program ID 2
+LAPTOP,PRG3_C,C,4,Program 3,Program ID 3
+LAPTOP,CASEMGR_N,N,9,Case Manager Number,Operator ID of Case Manager
+LAPTOP,REG_DATA_F,C,1,Download Registration Data,"""Y"" = Yes, ""N"" or blank = No"
+LAPTOP,IMM_DATA_F,C,1,Download Immunization Data,"""Y"" = Yes, ""N"" or blank = No"
+LAPTOP,INDXDATA_F,C,1,Download New State-Wide Master,"""Y"" = Yes, ""N"" or blank = No"
+LAPTOP,UPLOAD_D,D,8,Upload Date,Date of last Upload
+LAPTOP,UPLOADTM_H,C,8,Upload Time,Time of last Upload
+LAPTOP,U_OPERAT_I,N,9,Upload Operator ID,Operator ID of user that is uploaded
+LAPTOP,UP_EXCP_F,C,1,Upload Exception Flag,"""Y"" = Yes, ""N"" or blank = No"
+LAPTOP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+LAPTOP,OPERATOR_I,N,9,Operator ID,User Making Last Update
+LAPTOP,UPLOAD_F,C,1,Upload Indicator,See Code Table
+LAPTOP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+LEADAGNY,AGENCY_I,C,6,Agency ID,Unique ID assigned to the Agency by Cornerstone
+LEADAGNY,LEDAGNY_I,C,6,Lead Agency ID,"For the Genetics program, if the Agency is a Lead Agency"
+LEADAGNY,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+LEADAGNY,OPERATOR_I,N,9,Operator ID,User Making Last Update
+LEADSCRN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+LEADSCRN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+LEADSCRN,LEADSCRN_D,D,8,Lead Screening Date,Date of the Lead Screening
+LEADSCRN,LEADMETH_C,C,4,Lead Screening Method,Lead Screening Method used. See Code Table
+LEADSCRN,OPERAND_C,C,2,Operand,"""&gt;"" greater than
+""&lt;"" less than
+""="" equal to"
+LEADSCRN,LEADRSLT_N,N,3,Lead Screening Result,Result of Lead Screening
+LEADSCRN,SYS_GEN_F,C,1,System Generated Flag,"""Y"" = Yes, ""N"" or Blank = No"
+LEADSCRN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+LEADSCRN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+LEADSCRN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+LEADSCRN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+LOCATION,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+LOCATION,LOCATION_N,N,2,Location Number,Unique number assigned by Cornerstone to identify the location
+LOCATION,LOCATION_T,C,30,Location Name,Name of the Location
+LOCATION,DNLOAD_F,C,1,Download Indicator,"""Y"" = Yes, ""N"" or blank = No"
+LOCATION,DNLOAD_D,D,8,Download Date,Date of Download
+LOCATION,DNLOAD_H,C,8,Download Time,Time of Download
+LOCATION,DN_EMPL_I,N,9,Download by Employee ID,Cornerstone Employee ID of the user downloaded
+LOCATION,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+LOCATION,OPERATOR_I,N,9,Operator ID,User Making Last Update
+MANGPSUP,MANG_P_C,C,2,Mang P Code,Unique Number used to identify the Mang-P description
+MANGPSUP,COVR_TYP_C,C,1,Coverage Type Code,See Code Table for Coverage Type Code descriptions
+MANGPSUP,MANG_ST_C,C,1,Mang P Status Code,"""A"" = Active, ""I"" = Inactive"
+MANGPSUP,BRF_DESC_T,C,30,Brief Description Code,Description of the Mang-P Code
+MANGPSUP,COVR_DTL_C,C,4,Coverage Detail Code,See Code Table for Coverage Detail Code descriptions
+MANGPSUP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+MANGPSUP,OPERATOR_I,N,9,Operator ID,User Making Last Update
+MASTNDX1,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MASTNDX1,NAME_TYP_C,C,4,Name Type Code,See Code Table
+MASTNDX1,LAST_SDX_C,C,4,Last Name Soundex Code,Soundex Codes are used to create the Cornerstone Participant ID
+MASTNDX1,FRST_SDX_C,C,4,First Name Soundex Code,Soundex Codes are used to create the Cornerstone Participant ID
+MASTNDX1,MI_T,C,1,Middle Initial,"Middle Initial. If entered, it will be used in creating the Cornerstone Participant ID."
+MASTNDX1,SEX_C,C,4,Sex Code,See Code Table
+MASTNDX1,BIRTH_D,D,8,Birth Date,Participant's Date of Birth. Used to create the Cornerstone Participant ID
+MASTNDX1,LAST_NME_T,C,15,Last Name,Participant's Last Name
+MASTNDX1,FRST_NME_T,C,13,First Name,Participant's First Name
+MASTNDX1,LAST_UPD_D,D/T,8,Date Last Update,Last Site Update of This Record
+MASTNDX2,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MASTNDX2,ADDR_LN1_T,C,20,Address Line 1,Participant's Address
+MASTNDX2,ADDR_CTY_T,C,20,City,Address City. See Code Table
+MASTNDX2,ADDR_ST_C,C,4,State,Address State. See Code Table
+MASTNDX2,ADDR_ZIP_N,N,5,Zip Code,Address Zip Code.
+MASTNDX2,ALERT_F,C,1,Alert Indicator,
+MASTNDX2,LAST_UPD_D,D/T,8,Date Last Update,Last Site Update of This Record
+MASTNDX3,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+MASTNDX3,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MASTNDX3,PGM_ID_C,C,4,Program ID Code,See Code Table
+MASTNDX3,PGM_STAT_C,C,4,Program Status Code,See Code Table
+MASTNDX3,LAST_UPD_D,D/T,8,Date Last Update,Last Site Update of This Record
+MASTRIN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MASTRIN,COVR_TYP_C,C,4,Coverage Type Code,See Code Table
+MASTRIN,MANG_P_C,C,2,Mang P Code,Links to Mangpsup table
+MASTRIN,PCCM_NBR_T,C,12,PCCM Number,Primary Care Case Manager ID number
+MASTRIN,GRP_NBR_T,C,16,Group Number,Participant's All Kids Group Number
+MASTRIN,RIN,C,9,Recipient ID Number,Participant's RIN Number
+MASTRIN,RIN_STAT_C,C,4,RIN Status Code,See Code Table for RIN Status Code descriptions
+MASTRIN,RIN_STAT_D,D,8,RIN Status Date,Date of most recent RIN Status
+MASTRIN,MED_APRV_D,D,8,Effective Date,Date that All Kids Coverage begins
+MASTRIN,RGST_TYP_N,N,5,Registration Type,Filled in by Cornerstone
+MASTRIN,CATG_C,C,2,Category Code,See Code Table
+MASTRIN,CNTY_N,C,4,County,See Code Table for County Code descriptions
+MASTRIN,OFC_N,N,4,Office,Filled in by Cornerstone
+MASTRIN,GRP_T,C,2,Group,Filled in by Cornerstone
+MASTRIN,BASE_T,C,9,Base,Filled in by Cornerstone
+MASTRIN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+MASTRIN,MODULE_T,C,4,Module,Filled in by Cornerstone
+MEDICATN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+MEDICATN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MEDICATN,MED_C,C,4,Medication Code,Links to Medrules table
+MEDICATN,START_D,D,8,Medication Start Date,Date participant began medication
+MEDICATN,END_D,D,8,Medication End Date,Date participant ended medication
+MEDICATN,UNIT_T,C,10,Units of Medication,The number of units of medication to take
+MEDICATN,DOSE_T,C,3,Dosage of Medication,The number of times to take the medication
+MEDICATN,FREQ_T,C,10,Frequency of Usage,When to take the medication
+MEDICATN,TIME_T,C,10,Medication Time,"""AM"" = Morning
+""PM"" = Evening"
+MEDICATN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+MEDICATN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+MEDICATN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+MEDICATN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+MEDINSUR,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+MEDINSUR,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+MEDINSUR,COVR_TYP_C,C,4,Type of Coverage,This table can contain multiple types of Medicaid or other Insurance Coverage - See Code Table
+MEDINSUR,MED_SEQ_N,N,2,Medicaid/Insurance Sequence,Sequential Record Occurrence used to distinguish between historical records for the same Type of Coverage - Normally select the record with the highest sequence number within Type of Coverage
+MEDINSUR,GRP_NBR_T,C,16,Medicaid/Group Number,For Medicaid the is the Family Case Number
+MEDINSUR,INDV_NBR_T,C,9,Medicaid/individual Number,For Medicaid the is the Recipient ID Number from Public Aid
+MEDINSUR,MED_STAT_C,C,4,Medicaid Status,See Code Table
+MEDINSUR,COV_EXPR_D,D,8,Expiration/Termination Date,Date Insurance Coverage Expires
+MEDINSUR,MED_APPL_D,D,8,Application Date,Date Insurance Applied
+MEDINSUR,MED_APRV_D,D,8,Effective Date,Date Insurance Begins
+MEDINSUR,SYS_GEN_F,C,1,System Generated Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+MEDINSUR,MANG_P_C,C,4,Mang P Code,See Code Table
+MEDINSUR,PCCM_NBR_T,C,12,PCCM Number,Primary Care Case Manage Number
+MEDINSUR,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+MEDINSUR,OPERATOR_I,N,9,Operator ID,User Making Last Update
+MEDINSUR,UPLOAD_F,C,1,Upload Indicator,See Code Table
+MEDINSUR,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+MEDRULES,MED_C,C,4,Medication Type,Unique code to describe the medication
+MEDRULES,MED_T,C,30,Medication Name,Actual name of the medication
+MEDRULES,AVAI_T,C,30,Available Doses,Number of doses of the medication available
+MEDRULES,UNIT_T,C,10,Dose Type,Type of Dosage of the medication
+MEDRULES,DOSE_BEG_N,N,2,Beginning Dose,The beginning dose number
+MEDRULES,DOSE_END_N,N,2,Ending Dose,The maximum amount of the dose
+MEDRULES,FREQ_T,C,20,Frequency,When to take the medication
+MEDRULES,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+MEDRULES,OPERATOR_I,N,9,Operator ID,User Making Last Update
+OBLGATN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+OBLGATN,OBLG_SEQ_I,N,8,Sequence Number,Food Instrument Preprinted Check Number
+OBLGATN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+OBLGATN,FI_ISSUE_D,D,8,FI Issue Date,Date the Food Instrument was issued
+OBLGATN,FITIME_H,N,4,FI Issue Time,Time that the Food Instrument was issued
+OBLGATN,VLD_FROM_D,D,8,Valid From Date,Beginning Date that Food Instrument can be used
+OBLGATN,VLD_THRU_D,D,8,Valid To Date,Ending Date that Food Instrument can be used
+OBLGATN,FP_NBR_I,C,3,Food Package Number,Unique number used to identify the Food Package
+OBLGATN,FI_NBR_T,C,1,Food Instrument Number,Unique number used to identify the Food Instrument
+OBLGATN,OBLG_AMT_A,N,5,Obligation Amount,The monetary amount of the Food Instrument
+OBLGATN,OBLG_MAX_A,N,5,Obligation Maximum Amount,The maximum monetary amount that can used of the Food Instrument
+OBLGATN,OBLG_STA_C,C,4,Obligation Status,See Code Table
+OBLGATN,VOID_D,D,8,Void Date,Date the Food Instrument was voided in Cornerstone
+OBLGATN,VOID_RSN_C,C,4,Void Reason Code,See Code Table
+OBLGATN,OBLG_PRI_N,N,1,WIC Priority,Priority based on participant's risk factors. Priority level is 1 - 7 with 1 being the highest and 7 the lowest. The highest priority level is displayed.
+OBLGATN,CATEGORY_C,C,4,Category,See Code Table
+OBLGATN,RECOVERY_C,C,4,Recovery Code,Not used at Site
+OBLGATN,BANK_PRO_D,D,8,Bank Process Date,Not used at Site
+OBLGATN,VENDR_ID_I,C,4,Vendor ID,Not used at Site
+OBLGATN,REDEEMED_A,N,5,Redeemed Amount,Not used at Site
+OBLGATN,REDEEMED_D,D,8,Redeemed Date,Not used at Site
+OBLGATN,BANK_REJ_C,C,4,Bank Reject Code,Not used at Site
+OBLGATN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+OBLGATN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+OBLGATN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+OBLGATN,CO_UPD_D,D,8,Central Office Last Update,Last Update from Central Office
+OPEREXPN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+OPEREXPN,EXPN_YR_N,N,4,Expense Year,Year the Expense occurred
+OPEREXPN,EXPN_MTH_N,N,2,Expense Month,Month the Expense occurred
+OPEREXPN,EXPN_TYP_C,C,4,Expense Type,Type of Expense incurred. See Code Table
+OPEREXPN,DIR_EXPN_A,N,9.2,Direct Expense Amount,Total amount of direct expenses for the month specified
+OPEREXPN,IND_EXPN_A,N,10.2,Indirect Expense Amount,Total amount of indirect expenses for the month specified
+OPEREXPN,WRKDY_HR_N,N,4.1,Work Day Hours,Length of the workday
+OPEREXPN,FTE_EMPS_N,N,7.2,Full Time Equivalent,"Agency's total number of employees, measured in full-time equivalents"
+OPEREXPN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+OPEREXPN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+OPEREXPN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+OPEREXPN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTACTV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PARTACTV,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTACTV,EFFECT_M_C,C,2,Effective Month,Month that activity is effective
+PARTACTV,EFFECT_Y_C,C,4,Effective Year,Year that activity is effective
+PARTACTV,PART_ACT_C,C,4,Participant Activity Code,See Code Table for Participant Activity Code Descriptions.
+PARTACTV,VERIFY_D,D,8,Verification Date,Date Activity was verified
+PARTACTV,PAY_CDE_C,C,10,Pay Code,
+PARTACTV,AMOUNT_N,N,10.2,Paid Amount,
+PARTACTV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTACTV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTACTV,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PARTACTV,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTENRL,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PARTENRL,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTENRL,BRTH_LST_T,C,15,Birth Last Name,Participant's Birth Last Name
+PARTENRL,BRTH_FST_T,C,13,Birth First Name,Participant's Birth First Name
+PARTENRL,BRTH_MI_T,C,1,Birth Middle Initial,Participant's Birth Middle Initial
+PARTENRL,CUR_LAST_T,C,15,Current Last Name,Participant's Current Last Name
+PARTENRL,SCND_NME_T,C,15,Second Last Name,Can be used to record second surnames
+PARTENRL,CUR_FRST_T,C,13,Current First Name,Participant's Current First Name
+PARTENRL,CUR_MI_T,C,1,Current Middle Initial,Participant's Current Middle Initial
+PARTENRL,TITLE_T,C,10,Title,"Mr.,Mrs.,Miss"
+PARTENRL,AKA_LAST_T,C,15,AKA Last Name,"Also Known As Last Name, if different from Birth or Current Last Name"
+PARTENRL,AKA_FRST_T,C,13,AKA First Name,"Also Known As First Name, if different from Birth or Current First Name"
+PARTENRL,AKA_MI_T,C,1,AKA Middle Initial,"Also Know As Middle Initial, if different from Birth or Current Middle Initial"
+PARTENRL,MOTH_M_N_T,C,15,Mother's Maiden Name,Participant's Mother's Maiden Name
+PARTENRL,PART_SSN_T,C,9,Participant Social Security Number,Participant's Social Security Number
+PARTENRL,MED_RISK_F,C,1,Medical Risk Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+PARTENRL,BIRTH_D,D,8,Date of Birth,Participant's Date of Birth
+PARTENRL,DEATH_D,D,8,Date of Death,Participant's Date of Death
+PARTENRL,EDUCATN_C,C,4,Education Code,See Code Table
+PARTENRL,EMPLYMNT_C,C,4,Employment Status Code,See Code Table
+PARTENRL,RACE_C,C,4,Race Code 1,See Code Table
+PARTENRL,RACE2_C,C,4,Race Code 2,See Code Table
+PARTENRL,RACE3_C,C,4,Race Code 3,See Code Table
+PARTENRL,RACE4_C,C,4,Race Code 4,See Code Table
+PARTENRL,RACE5_C,C,4,Race Code 5,See Code Table
+PARTENRL,RACE6_C,C,4,Race Code 6,See Code Table
+PARTENRL,ASN_SUB_C,C,4,Asian Sub Category,See Code Table
+PARTENRL,ETHNIC_C,C,4,Hispanic Origin Code,See Code Table - In Ethnic Code
+PARTENRL,OCCPTN_C,C,4,Occupation Code,See Code Table
+PARTENRL,SEX_C,C,4,Sex Code,See Code Table
+PARTENRL,REF_SRCE_C,C,4,Referral Source Code,See Code Table
+PARTENRL,MRT_STAT_C,C,4,Marital Status Code,See Code Table
+PARTENRL,HSEHLD_N,N,2,Household Size,Numeric Number of Individuals in the Household
+PARTENRL,HSE_INC_A,N,6,Household Income,Dollar Amount in Whole Dollar
+PARTENRL,PREGNANT_F,C,1,Pregnant Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+PARTENRL,PRI_PROV_I,N,9,Primary Care Provider ID,Links to Provider Table
+PARTENRL,MED_ASGN_F,C,1,Medicaid Assignment Flag,See Code Table
+PARTENRL,REGISTER_D,D,8,Registration Date,Cornerstone Enrollment Date
+PARTENRL,RES_STAT_C,C,4,Residential Status Code,See Code Table
+PARTENRL,DSBLTY_1_C,C,4,Disability Code 1,See Code Table
+PARTENRL,DSBLTY_2_C,C,4,Disability Code 2,Same as Above
+PARTENRL,DSBLTY_3_C,C,4,Disability Code 3,Same as Above
+PARTENRL,LANG_1_C,C,4,Language Code 1,See Code Table
+PARTENRL,LANG_2_C,C,4,Language Code 2,Same as Above
+PARTENRL,LANG_3_C,C,4,Language Code 3,Same as Above
+PARTENRL,PA_CDE1_C,C,4,Public Assistance Code 1,See Code Table - In Other Services
+PARTENRL,PA_CDE2_C,C,4,Public Assistance Code 2,Same as Above
+PARTENRL,PA_CDE3_C,C,4,Public Assistance Code 3,Same as Above
+PARTENRL,PA_CDE4_C,C,4,Public Assistance Code 4,Same as Above
+PARTENRL,PA_CDE5_C,C,4,Public Assistance Code 5,Same as Above
+PARTENRL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTENRL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTENRL,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PARTENRL,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTFORM,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTFORM,EVENT_D,D,8,Event Date,Date that form was created
+PARTFORM,EVNT_SEQ_N,N,2,Event Sequence,Unique number
+PARTFORM,CONFIDNT_F,C,1,Confidential Flag,"""Y"" = Yes, ""N"" or blank = No"
+PARTFORM,FORM_TYP_C,C,4,Format Type Code,The type of form used
+PARTFORM,FINAL_F,C,1,Final Flag,"""Y"" = Yes, ""N"" or blank = No"
+PARTFORM,CASE_PRE_D,D,8,Case Prepared Date,Date that form was originally created
+PARTFORM,MSG_TEXT_M,M,10,Message Text,Freeform field used to record text
+PARTFORM,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTFORM,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTGOAL,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PARTGOAL,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTGOAL,GOAL_C,C,4,Goal Code,Suggested Goal for the Participant
+PARTGOAL,GL_STAT_C,C,4,Goal Status,Status of Attainment
+PARTGOAL,GOAL_PRI_C,C,4,Goal Priority,See Code Table
+PARTGOAL,ESTABLSH_D,D,8,Goal Established Date,Date that Goal was created
+PARTGOAL,SELECT_D,D,8,Date Selected,
+PARTGOAL,TARGET_D,D,8,Target Completion Date,Date for Goal to be Completed
+PARTGOAL,EMPL_ID_I,N,9,Employee ID,Link to Case Manager
+PARTGOAL,STATUS_D,D,8,Status Date,Status Date of Goal
+PARTGOAL,COMMENTS_M,M,10,Comments,Used to record additional notes
+PARTGOAL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTGOAL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTGOAL,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PARTGOAL,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTRISK,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PARTRISK,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTRISK,RISK_IDN_D,D,8,Risk Identified Date,Date that Risk was generated
+PARTRISK,RISK_C,C,4,Risk Code,See Code Table
+PARTRISK,ASSM_TYP_C,C,4,Assessment Type,See Code Table
+PARTRISK,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTRISK,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTRISK,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PARTRISK,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTRSK2,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PARTRSK2,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PARTRSK2,RISK_IDN_D,D,8,Risk Identified Date,Date that Risk was generated
+PARTRSK2,RISK_C,C,4,Risk Code,See Code Table
+PARTRSK2,ASSM_TYP_C,C,4,Assessment Type Code,See Code Table
+PARTRSK2,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PARTRSK2,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PARTRSK2,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PARTRSK2,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PARTRSK2,RISK_TYP_C,C,4,Risk Type Code,See Code Table
+PARTSNDX,LAST_SDX_C,C,4,Last Name Soundex Code,"""Sounds like value"" generated using Foxpro on Last Name"
+PARTSNDX,NAME_TYP_C,C,4,Name Type Code,Birth or Current Name - See Code Table
+PARTSNDX,FRST_SDX_C,C,4,First Name Soundex Code,"""Sounds like value"" generated using Foxpro on First Name"
+PARTSNDX,MI_T,C,1,Middle Initial,"Participant's Middle Initial, used to create the Cornerstone Participant ID"
+PARTSNDX,FI_T,C,1,First Initial,"The First Initial of the Participant's Last Name, used to create the Cornerstone Participant ID"
+PARTSNDX,SEX_C,C,4,Sex Code,See Code Table
+PARTSNDX,BIRTH_D,D,8,Birth Date,"Participant's Date of Birth, used to create the Cornerstone Participant ID"
+PARTSNDX,PART_ID_I,C,14,Participant ID,Link to Participant Number
+PCCM,PCCM_NBR_T,C,12,PCCM Number,Primary Care Case Manager ID Number
+PCCM,PCCM_NME_T,C,30,PCCM Name,Primary Care Case Manager Name
+PCCM,PCCM_STR_T,C,30,PCCM Street Address 1,Primary Care Case Manager Street Address
+PCCM,PCCM_ST2_T,C,30,PCCM Street Address 2,Primary Care Case Manager Street Address
+PCCM,PCCM_CTY_T,C,15,PCCM City,Primary Care Case Manager City
+PCCM,PCCM_ST_T,C,2,PCCM State,Primary Care Case Manager State. See Code Table.
+PCCM,PCCM_ZIP_T,C,5,PCCM Zip Code,Primary Care Case Manager Zip Code
+PCCM,PCCM_EXT_T,C,4,PCCM Zip Extension,Primary Care Case Manager Zip Code 4 digit extension
+PCCM,PCCM_PHN_T,C,10,PCCM Phone Number,Primary Care Case Manager Phone Number
+PGMEDITS,PGM_ID_C,C,4,Program ID Code,See Code Table
+PGMEDITS,CATEGORY_C,C,4,Category,See Code Table
+PGMEDITS,CDE_NAME_T,C,10,Code Name,See Code Table
+PGMEDITS,CODE_VAL_C,C,4,Code Value,See Code Table
+PGMEDITS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PGMEDITS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PLANSERV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PLANSERV,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PLANSERV,SRV_STAT_C,C,4,Planned Service Status,Current Status - See Code Table
+PLANSERV,PLANNED_D,D,8,Planned Date To Complete Service,Planned Date for Participant to Complete Service
+PLANSERV,SERV_TYP_C,C,4,Service Type Code,See Code Table
+PLANSERV,SRV_STAT_D,D,8,Service Status Date,Most Recent Date of Status Code
+PLANSERV,EMPL_ID_I,N,9,Employee ID,Link to Employee that is tracking the service
+PLANSERV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PLANSERV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PLANSERV,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PLANSERV,CO_UPD_D,D,8,Central Office Date Last,Last Update from Central Office
+POSTPART,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+POSTPART,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+POSTPART,VISIT_D,D,8,Visit Date,Date of Postpartum Visit Date
+POSTPART,SERV_TYP_C,C,4,Service Type Code,See Code Table
+POSTPART,HOSP_ID_C,C,4,Hospital ID Code,Link to Hospitals in Code Table
+POSTPART,ACT_DLV_D,D,8,Actual Delivery Date,Actual Deliver Date of baby
+POSTPART,INFNT_ID_I,C,14,Participant ID - Infant,Link to Infant's Participant Records
+POSTPART,DLV_PLC_C,C,4,Place Of Delivery,See Code Table
+POSTPART,DLV_MTHD_C,C,4,Method Of Delivery,See Code Table
+POSTPART,PREG_WKS_N,N,2,Length Of Pregnancy In Weeks,Numeric response
+POSTPART,PREG_OTC_C,C,4,Pregnancy Outcome Code,See Code Table
+POSTPART,WGT_PNDS_N,N,3,Mothers Weight Just Prior To Delivery,Mother's Weight just prior to Delivery in pounds
+POSTPART,WGT_OZS_N,N,2,Mothers Weight Just Prior To Delivery,Mother's Weight just prior to Delivery in ounces
+POSTPART,CMPL_CD1_C,C,4,Maternal Complication Code 1,See Code Table
+POSTPART,CMPL_CD2_C,C,4,Maternal Complication Code 2,See Code Table
+POSTPART,CMPL_CD3_C,C,4,Maternal Complication Code 3,See Code Table
+POSTPART,CMPL_CD4_C,C,4,Maternal Complication Code 4,See Code Table
+POSTPART,CMPL_CD5_C,C,4,Maternal Complication Code 5,See Code Table
+POSTPART,FETUSES_N,N,1,Total Fetuses,Total Number of Fetuses Delivered
+POSTPART,MALE_NBR_N,N,1,Number Of Male,Total Number of Male Fetuses Delivered
+POSTPART,FEML_NBR_N,N,1,Number Of Female,Total Number of Female Fetuses Delivered
+POSTPART,LIV_BRTH_N,N,1,Number Of Live At Birth,Total Number of Live Births
+POSTPART,LIV_POST_N,N,1,Number Of Live At Postpartum Visit,Total Number of Live Fetuses at Postpartum Visit
+POSTPART,WKS_DIED_N,N,2,Died At - In Weeks,Numeric response
+POSTPART,STILLBRN_N,N,1,Number Of Stillborn,Total Number of Stillborn Fetuses at Birth
+POSTPART,LW_BRTH_N,N,2,Number Of Low Weight Births,Total Number of Low Weight Births
+POSTPART,PT_BRTH_N,N,2,Number Of Pre Term Births,Total Number of Pre Term Births
+POSTPART,EARLY_D_F,C,1,Early Discharge Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+POSTPART,RE_HOSP_F,C,1,Maternal Re-Hospitalization Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+POSTPART,MDSPCREF_N,N,2,Number Of Medical Special Referrals,Total Number of Referrals to Medical Specialists
+POSTPART,PREG_HSP_N,N,2,Number Of Hospitalizations During,Total Number of Hospital Stays during the Pregnancy
+POSTPART,PMD_VSIT_N,N,2,Number Of Prenatal MD Visits,Total Number of Prenatal Doctor Visits
+POSTPART,SMK3_MTH_F,C,1,Smoke - Last 3 Month Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+POSTPART,CIG3_DAY_N,N,2,Number Of Cigarettes Smoked Per Day - Last 3,Total Number of cigarettes Smoked per Day in the Last 3 Months
+POSTPART,DRK3_MTH_F,C,1,Drink - Last 3 Months Indicator,"""Y"" = Yes, ""N"" or Blank = No"
+POSTPART,DR_DY_WK_N,N,1,Number Of Days A Week She Drank - Last 3,Total Number of Days a Week Participant Drank in the Last 3 Months
+POSTPART,DRNK_DAY_N,N,2,Number Of Drinks Per Day - Last 3 Months,Total Number of Drinks per Day Participant had in the Last 3 Months
+POSTPART,FAM_PLAN_C,C,4,Family Planning Method Code,See Code Table
+POSTPART,PREN_EDC_D,D,8,Estimated Date Of Confinement (EDC),Link back to Prenatal Record - This field ties the Postpartum and Prenatal Records together (There can only be one of each per pregnancy)
+POSTPART,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+POSTPART,OPERATOR_I,N,9,Operator ID,User Making Last Update
+POSTPART,UPLOAD_F,C,1,Upload Indicator,See Code Table
+POSTPART,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+POTENDUP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+POTENDUP,PART_ID1_I,C,14,Participant ID 1,First Participant ID of Potential Duplicate
+POTENDUP,LST_NME1_T,C,15,Last Name 1,Last Name of First Participant
+POTENDUP,FST_NME1_T,C,13,First Name 1,First Name of First Participant
+POTENDUP,MI1_T,C,1,Middle Initial 1,Middle Initial of First Participant
+POTENDUP,MTH_M_N1_T,C,15,Mothers Maiden Name 1,Mother's Maiden Name of First Participant
+POTENDUP,BIRTH1_D,D,8,Birth Date 1,Date of Birth of First Participant
+POTENDUP,SEX1_C,C,1,Sex Code 1,Sex Code of First Participant
+POTENDUP,SSN1_T,C,9,Social Security Number 1,Social Security Number of First Participant
+POTENDUP,PART_ID2_I,C,14,Participant ID 2,Second Participant ID of Potential Duplicate
+POTENDUP,LST_NME2_T,C,15,Last Name 2,Last Name of Second Participant
+POTENDUP,FST_NME2_T,C,13,First Name 2,First Name of Second Participant
+POTENDUP,MI2_T,C,1,Middle Initial 2,Middle Initial of Second Participant
+POTENDUP,MTH_M_N2_T,C,15,Mothers Maiden Name 2,Mother's Maiden Name of Second Participant
+POTENDUP,BIRTH2_D,D,8,Birth Date 2,Date of Birth of Second Participant
+POTENDUP,SEX2_C,C,1,Sex Code 2,Sex Code of Second Participant
+POTENDUP,SSN2_T,C,9,Social Security Number 2,Social Security Number of Second Participant
+POTENDUP,DUPTYPE,C,1,Duplicate Type,Type of Duplicate
+POTENDUP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+POTENDUP,OPERATOR_I,N,9,Operator ID,User Making Last Update
+POTENDUP,UPLOAD_F,C,1,Upload Indicator,See Code Table
+POTENDUP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PRENATAL,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PRENATAL,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PRENATAL,VISIT_D,D,8,Visit Date,When pregnancy recorded
+PRENATAL,SERV_TYP_C,C,4,Service Type Code,Links to Service Type Table for the service being provided when the pregnancy was recorded
+PRENATAL,PRG_CNFR_D,D,8,Date Pregnancy Confirmed,Date the Participant's Pregnancy was confirmed
+PRENATAL,EDC_D,D,8,Estimated Date Of Confinement (EDC),Links forward to Postpartum Record - This field ties the Postpartum and Prenatal Records together (There can only be one of each per pregnancy)
+PRENATAL,EDC_VERF_F,C,1,EDC Verification Indicator,"""Y"" = Verified"
+PRENATAL,LMP_D,D,8,Last Menstrual Period Date (LMP),Date of Participant's Last Menstrual Period Date
+PRENATAL,HGT_FEET_N,N,1,Pre-Pregnancy Height - Feet,Participant's Pre-Pregnancy Height in Feet
+PRENATAL,HGT_INCH_N,N,2,Pre-Pregnancy Height - Inches,Participant's Pre-Pregnancy Height in Inches
+PRENATAL,HGT_QICH_N,N,1,Pre-Pregnancy Height - Quarter - Inches,Participant's Pre-Pregnancy Height in Quarter Inches
+PRENATAL,WGT_PNDS_N,N,3,Pre-Pregnancy Weight - Pounds,Participant's Pre-Pregnancy Weight in Pounds
+PRENATAL,WGT_OZS_N,N,2,Pre-Pregnancy Weight - Ounces,Participant's Pre-Pregnancy Weight in Ounces
+PRENATAL,MONCARE_N,N,1,Month Care Began,Month Prenatal Care Began
+PRENATAL,PRI_VSIT_N,N,2,Number Of Prenatal Visits Prior To,Total Number of Prenatal Visits Prior to Today's Visit
+PRENATAL,PREG_NBR_N,N,2,Number Of Pregnancies,Total Number of Pregnancies Participant has had
+PRENATAL,LSTLV_BR_D,D,8,Date Of Last Live Birth,Date of Participant's Last Live Birth
+PRENATAL,LST_WGTG_N,N,4,Weight Of Last Live Birth - Grams,Weight of Participant's Last Live Birth in Grams
+PRENATAL,LV_BRTH_N,N,2,Number Of Previous Live Births,Total Number of Participant's Previous Live Births
+PRENATAL,OTHR_TRM_N,N,2,Number Of Other Terminations,Total Number of Participant's Other Terminations
+PRENATAL,OTH_TERM_D,D,8,Date Of Last Other Termination,Date of Participant's Last Other Termination
+PRENATAL,SMK3_MTH_F,C,1,Smoke - 3 Months Prior Indicator,"""Y"" = Yes, ""N"" = No"
+PRENATAL,CIG3_DAY_N,N,2,Number Of Cigarettes Smoked Per Day,Total Number of Cigarettes the Participant Smoked per Day for the Previous 3 Months
+PRENATAL,DRK3_MTH_F,C,1,Drink - 3 Months Prior Indicator,"""Y"" = Yes, ""N"" = No"
+PRENATAL,DR_DY_WK_N,N,1,Number Of Days A Week She Drank,Total Number of Days per Week the Participant Drank in the previous 3 months
+PRENATAL,DRNK_DAY_N,N,2,Number Of Drinks Per Day,Total Number of Drinks per Day the Participant had in the Previous 3 Months.
+PRENATAL,POSTPART_I,C,1,Postpartum Indicator,"""Y"" = Yes, ""N"" or blank = No"
+PRENATAL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PRENATAL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PRENATAL,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PRENATAL,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PROCEDIT,PROCEDUR_C,C,5,Procedure Code,Procedure Code. See Procedur Table
+PROCEDIT,SERV_TYP_C,C,4,Service Type Code,Service Type Code. See Servcode table
+PROCEDIT,CDE_NAME_T,C,10,Code Name,See Code Table for values
+PROCEDIT,CODE_VAL_C,C,4,Code Value,See Code Table for values
+PROCEDIT,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROCEDIT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROCEDUR,PROCEDUR_C,C,5,Procedure Code,The unique code used to identify the procedure code.
+PROCEDUR,EFF_BEG_D,D,8,Effective Begin Date,Effective Begin Date of the Procedure Code
+PROCEDUR,EFF_END_D,D,8,Effective End Date,Effective End Date of the Procedure Code
+PROCEDUR,BRF_DESC_T,C,30,Brief Description,Brief Description of the Procedure Code
+PROCEDUR,LNG_DESC_M,M,4,Procedure Long Description,Longer Description of the Procedure Code
+PROCEDUR,HFS_SRV_C,C,4,HFS Service Type Code,Numeric response
+PROCEDUR,UNIT_TYP_C,C,4,Unit Type Code,See Code Table for Unit Type Code descriptions
+PROCEDUR,MED_CLM_F,C,1,Medicaid Claimable Indicator,"""Y"" = Yes, ""N"" or blank = No"
+PROCEDUR,CHRG_AMT_A,N,7.2,Procedure Charge,Monetary Amount of the Procedure
+PROCEDUR,PROC_ST_C,C,1,Procedure Status,"""A"" = Active
+""I"" = Inactive"
+PROCEDUR,PRC_DIAG_F,C,1,Procedure Diagnosis Indicator,"""P"" = Procedure"
+PROCEDUR,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROCEDUR,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROCHIPA,PROCHIPA_C,C,5,Procedure Code HIPA,HIPA procedure codes
+PROCHIPA,MODIFR01_C,C,2,Modifier 1,See Appendix B - EI HIPAA Procedure Code Table for descriptions
+PROCHIPA,MODIFR02_C,C,2,Modifier 2,See Appendix B - EI HIPAA Procedure Code Table for descriptions
+PROCHIPA,MODIFR03_C,C,2,Modifier 3,See Appendix B - EI HIPAA Procedure Code Table for descriptions
+PROCHIPA,MODIFR04_C,C,2,Modifier 4,See Appendix B - EI HIPAA Procedure Code Table for descriptions
+PROCHIPA,BRF_DESC_T,C,30,Brief Description,Short description of Procedure
+PROCHIPA,LNG_DESC_M,M,4,Procedure Long Description,More detailed description of Procedure
+PROCHIPA,PROC_ST_C,C,1,Procedure Status,"""A"" = Active, ""I"" = Inactive"
+PROCHIPA,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROCHIPA,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROCLOG,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PROCLOG,MODULE_T,C,10,Module Name,
+PROCLOG,PROCSTRT_D,D,8,Process Start Date,Date Process Started
+PROCLOG,STRT_SEC_N,N,5,Process Start Seconds,Time Process Started in Seconds
+PROCLOG,PROCEND_D,D,8,Process End Date,Date Process Ended
+PROCLOG,STOP_SEC_N,N,5,Process End Seconds,Time Process Ended in Seconds
+PROCLOG,COMMENTS,M,4,Comments,Used to record additional notes
+PROCLOG,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROCLOG,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PROCLOG,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROCLOG,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PROGRAM,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PROGRAM,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+PROGRAM,PGM_ID_C,C,4,Program ID Code,See Code Table
+PROGRAM,LOCATION_N,N,2,Location Code,Used when there are multiple site locations to indicate which location is providing program services.
+PROGRAM,PGM_STAT_C,C,4,Program Status Code,See Code Table
+PROGRAM,PGM_STAT_D,D,8,Program Status Date,Date that the status code was set to the current value
+PROGRAM,INIT_CON_D,D,8,Initial Contact Date,Program contact date
+PROGRAM,SCH_TERM_D,D,8,Scheduled Termination Date,Date that Participant is Scheduled to terminate from a Program
+PROGRAM,STRTCERT_D,D,8,Start/Certification Date,Beginning of Active Certification or Start of Program Enrollment - Used to distinguish between program history records
+PROGRAM,ACT_TERM_D,D,8,Actual Termination Date,Actual Date that the Participant terminated the Program
+PROGRAM,CATEGORY_C,C,4,Category,See Code Table
+PROGRAM,HSEHLD_N,N,2,Household Size,Number of people living in the household
+PROGRAM,HSE_INC_A,N,6,Household Income,Saved at time of eligibility determination
+PROGRAM,INC_PRF_C,C,4,Type Of Income Proof On File,See Code Table
+PROGRAM,INELGRSN_C,C,4,Ineligibility Reason Code,See Code Table
+PROGRAM,TERM_RSN_C,C,4,Termination Reason Code,See Code Table
+PROGRAM,TRN_FROM_I,C,6,Transfer From Clinic,Clinic ID where the Participant transferred from
+PROGRAM,TRN_FROM_D,D,8,Transfer From Date,Clinic ID where the Participant transferred to
+PROGRAM,WIC_PRTY_N,N,1,WIC Priority Number,Priority based on participant's risk factors. Priority level is 1 - 7 with 1 being the highest and 7 the lowest. The highest priority level is displayed.
+PROGRAM,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROGRAM,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROGRAM,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PROGRAM,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PRORATE,FP_NBR_I,C,3,Food Package Number,Unique Number used to identify the Food Package
+PRORATE,FP_WK1_I,C,3,Week 1 Package,Week 1 Food Package Information
+PRORATE,FP_WK2_I,C,3,Week 2 Package,Week 2 Food Package Information
+PRORATE,FP_WK3_I,C,3,Week 3 Package,Week 3 Food Package Information
+PRORATE,CATG_B_F,C,1,Category - Breastfeeding Indicator,Indicates that participant is breastfeeding
+PRORATE,CATG_C_F,C,1,Category - Child Indicator,Indicates that participant is a child
+PRORATE,CATG_I_F,C,1,Category - Infant Indicator,Indicates that participant is an infant
+PRORATE,CATG_N_F,C,1,Category - Non-Breastfeeding Indicator,Indicates that participant is not breastfeeding (postpartum)
+PRORATE,CATG_P_F,C,1,Category - Pregnancy Indicator,Indicates that participant is pregnant
+PRORATE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PRORATE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PRORATE2,FP_NBR_I,C,3,Food Package Number,Unique Number used to identify the Food Package
+PRORATE2,FP_WK1_I,C,3,Week 1 Package,Prorated Food Packages Week 1 details
+PRORATE2,FP_WK2_I,C,3,Week 2 Package,Prorated Food Package Week 2 details
+PRORATE2,FP_WK3_I,C,3,Week 3 Package,Prorated Food Package Week 3 details
+PRORATE2,CATG_B_F,C,1,Category - Breastfeeding Indicator,Indicates that participant is breastfeeding
+PRORATE2,CATG_C_F,C,1,Category - Child Indicator,Indicates that participant is a child
+PRORATE2,CATG_I_F,C,1,Category - Infant Indicator,Indicates that participant is an infant
+PRORATE2,CATG_N_F,C,1,Category - Non-Breastfeeding Indicator,Indicates that participant is not breastfeeding (postpartum)
+PRORATE2,CATG_P_F,C,1,Category - Pregnancy Indicator,Indicates that participant is pregnant
+PRORATE2,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PRORATE2,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROVADDR,ADDR_ID_I,C,14,Address ID,Provider Address
+PROVADDR,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+PROVADDR,ADDR_ID_C,C,4,Address ID Type Code,Provider Address Type. See Code Table
+PROVADDR,ADDR_TYP_C,C,4,Address Type Code,Provider Address Type. See Code Table
+PROVADDR,ADDR_LN1_T,C,20,Address Line 1,Provider Address
+PROVADDR,ADDR_LN2_T,C,20,Address Line 2,Provider Address
+PROVADDR,ADDR_APT_T,C,5,Apartment Number,Provider Apartment Number
+PROVADDR,ADDR_CTY_T,C,20,City,Provider City
+PROVADDR,ADDR_ST_C,C,4,State,Provider State. See Code Table
+PROVADDR,ADDR_ZIP_N,N,5,Zip Code,Provider Zip Code
+PROVADDR,ZIP_EXT_N,N,4,Zip Code Extension,Provider Zip Code 4 Digit Extension
+PROVADDR,CONT_NME_T,C,25,Contact Name,Provider Contact Name
+PROVADDR,RELATE_C,C,4,Relationship Code,Provider Relationship Code. See Code Table
+PROVADDR,COUNTY_C,C,4,County Code,Provider County Code. See Code Table
+PROVADDR,PHNE_NBR_N,N,10,Phone Number,Provider Phone Number
+PROVADDR,MODM_NBR_N,N,10,Modem Number,Provider Modem Number
+PROVADDR,FAX_NBR_N,N,10,Fax Number,Provider Fax Number
+PROVADDR,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROVADDR,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROVADDR,UPLOAD_F,C,1,Upload Indicator,See Code Table
+PROVADDR,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PROVCOS,PROV_ID_I,N,9,Provider ID,Provider ID Number
+PROVCOS,PROV_SFX_I,N,3,Provider Suffix,Provider Suffix Number
+PROVCOS,CNTY_SRV_C,C,4,County Served by Provider,County Code
+PROVCOS,SRVD_ST_C,C,4,Status in this County,Provider Status
+PROVCOS,STATUS_D,D,8,Status Date,Most recent date of Provider Status
+PROVCOS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROVCOS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROVDTL,PROV_ID_I,N,9,Provider ID,Provider ID Number
+PROVDTL,PROV_SFX_I,N,3,Provider Suffix,Provider Suffix Number
+PROVDTL,PROV_LST_T,C,30,Last Name,Provider Last Name
+PROVDTL,PROV_FST_T,C,13,First Name,Provider First Name
+PROVDTL,PROV_MI_T,C,1,Middle Initial,Provider Middle Initial
+PROVDTL,P_TITLE_T,C,4,Title,Provider Title
+PROVDTL,PRV_DGR1_T,C,4,Degree 1,Provider Degree 1
+PROVDTL,PRV_DGR2_T,C,4,Degree 2,Provider Degree 2
+PROVDTL,PRV_DGR3_T,C,4,Degree 3,Provider Degree 3
+PROVDTL,PROV_ST_C,C,4,Provider Status,"""A"" = Active
+""I"" = Inactive"
+PROVDTL,STATUS_D,D,8,Status Date,Most recent date of Provider Status
+PROVDTL,PRV_CAT_C,C,4,Provider Category Code,See Code Table for Provider Category Code descriptions.
+PROVDTL,PRV_HFS_N,C,12,Provider HFS Code,Number assigned to Provider by HFS
+PROVDTL,PRV_CON_N,C,11,,
+PROVDTL,LANG_1_C,C,4,Language Code 1,Language Codes. See Code Table
+PROVDTL,LANG_2_C,C,4,Language Code 2,Language Codes. See Code Table.
+PROVDTL,LANG_3_C,C,4,Language Code 3,Language Codes. See Code Table.
+PROVDTL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROVDTL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROVIDER,PROV_ID_I,N,9,Provider ID,Provider Number
+PROVIDER,ID_FORMAT_C,C,4,ID Format,See Code Table for ID Format descriptions
+PROVIDER,PROV_TYP_C,C,4,Provider Type,See Code Table
+PROVIDER,PRV_CNTL_F,C,1,Provider Control Flag,"""Y"" = Yes, ""N"" = No"
+PROVIDER,PROV_NME_T,C,50,Provider Name,Provider Name
+PROVIDER,SYSTEM_D,D,8,Date On System,
+PROVIDER,PRV_STAT_C,C,4,Provider Status,See Code Table
+PROVIDER,SERV_DLV_C,C,4,Internal/External Service Delivery,See Code Table
+PROVIDER,REFERRAL_C,C,4,Referral Indicator Code,See Code Table
+PROVIDER,COMMENTS_M,M,4,Comments,Used to record additional notes
+PROVIDER,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROVIDER,OPERATOR_I,N,9,Operator ID,User Making Last Update
+PROVIDER,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+PROVSERV,PROV_ID_I,N,9,Provider ID,Provider Number
+PROVSERV,SERV_TYP_C,C,4,Service Type Code,Link to Service Type Table for services of this provider
+PROVSERV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+PROVSERV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+REFERRAL,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+REFERRAL,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+REFERRAL,REFERRAL_D,D,8,Date Of Referral,
+REFERRAL,REFR_PRV_I,N,9,Provider ID - Referred To,Link to Provider Table of the provider that the participant was referred to
+REFERRAL,REFR_APT_D,D,8,Referral Appointment Date,
+REFERRAL,REFR_TIM_H,N,4,Referral Appointment Time,
+REFERRAL,SERV_TYP_C,C,4,Service Type Code,Link to Service Type Table
+REFERRAL,RFEMP_BY_C,N,9,Employee ID -Referred From,Link to Employee Table
+REFERRAL,COMMENTS_M,M,10,Comments,Used to record additional notes
+REFERRAL,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+REFERRAL,OPERATOR_I,N,9,Operator ID,User Making Last Update
+REFERRAL,UPLOAD_F,C,1,Upload Indicator,See Code Table
+REFERRAL,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+REINDERR,E_DATE,D,8,Error Date,Date the error occurred
+REINDERR,E_TIME,C,8,Error Time,Time that the error occurred
+REINDERR,E_MESS,C,50,Error Message,Details of the error message
+REINDERR,E_DESC,M,10,Error Description,Description of the error
+REINDEX,DBNAME,C,10,DB Name,Database Name
+REINDEX,DBEXPR,C,40,DB,Database Description
+REINDEX,REINDEX1,L,1,Reindex 1,"""T"" = True, ""F"" = False"
+REINDEX,LASTIND1,C,17,Last Reindex 1,Date and Time the Table was last reindexed
+REINDEX,TABLENAME,C,10,Table Name,Cornerstone Table Name
+REINDEX,PROMPTNAME,C,40,Prompt Name,Description of Table
+REINDEX,REINDEX2,L,1,Reindex 2,"""T"" = True, ""F"" = False"
+REINDEX,LASTIND2,C,17,Last Reindex 2,Date and Time the Table was last reindexed
+REINDEX,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+REPORT,RPT_TYP_C,C,4,Report Type Code,Type of Report. See Code Table
+REPORT,CATEOGRY_C,C,8,Category,Program that uses report
+REPORT,RPT_NBT_T,C,8,Report Number,Unique number used to identify the report
+REPORT,RPT_NME_T,C,50,Report Name,Name of the report
+REPORT,PART_ID_F,C,1,Participant Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,CLINIC_F,C,1,Clinic ID Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,SUB_LOC_F,C,1,Sub Location Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,FROM_DTE_F,C,1,From Date Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,TO_DTE_F,C,1,To Date Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,AS_OF_DT_F,C,1,Select/As of Date Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,ANN_PROC_F,C,1,Annual Processing Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,RPT_MMYY_F,C,1,Report Month/Year Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,ASSESS_F,C,1,Assess Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,PROV_ID_F,C,1,Provider ID Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,EMPL_ID_F,C,1,Employee ID Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,PGM_CDE_F,C,1,Program Code Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,SERV_CDE_F,C,1,Service Code Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,ACT_CDE_F,C,1,Activity Code Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,COUNTY_F,C,1,County Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,PGM_STAT_F,C,1,Program Status Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,PGM_CATG_F,C,1,Program Category Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,STRT_TME_F,C,1,Start Time Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,SCHD_ID_F,C,1,Schedule ID Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,MIN_AGE_F,C,1,Minimum Age,"""M"" = Mandatory
+""N"" = No"
+REPORT,MAX_AGE_F,C,1,Maximum Age,"""M"" = Mandatory
+""N"" = No"
+REPORT,VENDOR_F,C,1,Vendor ID Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,AGENCY_F,C,1,Agency Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,WRT_DSK_F,C,1,Write Report to Disk File Indicator,Indicates whether or not the report can be written to a disk
+REPORT,POS_PRE_F,C,1,Possible Prelim Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,ZIP_CODE_F,C,1,Zip Code Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,PRIORITY_F,C,1,WIC Priority Code Indicatory,"""M"" = Mandatory
+""N"" = No"
+REPORT,RISK_F,C,1,WIC Risk Code Indicator,"""M"" = Mandatory
+""N"" = No"
+REPORT,APORS_F,C,1,APORS Indicator,Indicates whether or not participant is APORS
+REPORT,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+REPORT,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SCHDEXCP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+SCHDEXCP,SCHD_ID_I,N,2,Schedule ID,Unique number to identify the schedule
+SCHDEXCP,NOT_OPER_D,D,8,Date Not Operating,Date that the clinic will not be open
+SCHDEXCP,COMMENTS_M,C,50,Comments,Used to record additional notes
+SCHDEXCP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SCHDEXCP,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SCHDEXCP,UPLOAD_F,C,1,Upload Indicator,See Code Table
+SCHDEXCP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+SCHDEXCP,BEGINTIME,C,8,Beginning Close Time,Start Time of the Close Day
+SCHDEXCP,ENDTIME,C,8,Ending Close Time,End Time of the Close Day
+SCHDRSRC,SCHD_ID_I,N,2,Schedule ID,Unique number to identify the schedule
+SCHDRSRC,RSRC_N,N,2,Resource Number,Number of the Resource scheduled
+SCHDRSRC,RSRC_NME_T,C,20,Resource Name,Name of the Resource scheduled
+SCHDRSRC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SCHDRSRC,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SCHEDULE,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+SCHEDULE,SCHD_ID_I,N,2,Schedule ID,Unique number to identify the schedule
+SCHEDULE,SCHD_NME_I,C,30,Schedule Name,Name of the Schedule
+SCHEDULE,CLASS_F,C,1,Class Indicator,"""Y"" = Yes, ""N"" or blank = No"
+SCHEDULE,SERV_TYP_C,C,4,Service Type Code,See Code Table
+SCHEDULE,MON_BEG_H,N,4,Monday - Beginning Hours,Start Time in Hours on Monday
+SCHEDULE,MON_BEG_AP,C,1,Monday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,MON_END_H,N,4,Monday - Ending Hours,End Time in Hours on Monday
+SCHEDULE,MON_END_AP,C,1,Monday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,TUE_BEG_H,N,4,Tuesday - Beginning Hours,Start Time in Hours on Tuesday
+SCHEDULE,TUE_BEG_AP,C,1,Tuesday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,TUE_END_H,N,4,Tuesday - Ending Hours,End Time in Hours on Tuesday
+SCHEDULE,TUE_END_AP,C,1,Tuesday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,WED_BEG_H,N,4,Wednesday - Beginning Hours,Start Time in Hours on Wednesday
+SCHEDULE,WED_BEG_AP,C,1,Wednesday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,WED_END_H,N,4,Wednesday - Ending Hours,End Time in Hours on Wednesday
+SCHEDULE,WED_END_AP,C,1,Wednesday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,THU_BEG_H,N,4,Thursday - Beginning Hours,Start Time in Hours on Thursday
+SCHEDULE,THU_BEG_AP,C,1,Thursday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,THU_END_H,N,4,Thursday - Ending Hours,End Hours on Thursday
+SCHEDULE,THU_END_AP,C,1,Thursday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,FRI_BEG_H,N,4,Friday - Beginning Hours,Start Time in Hours on Friday
+SCHEDULE,FRI_BEG_AP,C,1,Friday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,FRI_END_H,N,4,Friday - Ending Hours,End Time in Hours on Friday
+SCHEDULE,FRI_END_AP,C,1,Friday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,SAT_BEG_H,N,4,Saturday - Beginning Hours,Start Time in Hours on Saturday
+SCHEDULE,SAT_BEG_AP,C,1,Saturday - Beginning AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,SAT_END_H,N,4,Saturday - Ending Hours,End Time in Hours on Saturday
+SCHEDULE,SAT_END_AP,C,1,Saturday - Ending AM/PM Indicator,"""A"" = AM, ""P"" = PM"
+SCHEDULE,INCRMNT_N,N,3,Increments/Intervals,15 minute increments
+SCHEDULE,CLASS_SZ_N,N,2,Class Size,Maximum number of people allowed in the class
+SCHEDULE,LOCATION_N,N,2,Location Number,Location number of class
+SCHEDULE,COMMENTS_M,C,50,Comments,Used to record additional notes
+SCHEDULE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SCHEDULE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SCHEDULE,UPLOAD_F,C,1,Upload Indicator,See Code Table
+SCHEDULE,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+SCHLDIST,COUNTY_C,C,3,County Code,See Code Table
+SCHLDIST,DISTRICT_C,C,5,District Code,See District Table
+SCHLDIST,SCHL_NME_C,C,40,School Name,Name of the School
+SCREEN,SCRN_ID_C,C,4,Screen ID Code,The Cornerstone Screen ID
+SCREEN,SCRN_DESC,C,30,Screen Description,Description of the screen
+SCREEN,STD_BLOK_C,C,4,Standard Block Code,
+SCREEN,ADD_F,L,1,Add Flag,"""T"" = True, ""F"" = False"
+SCREEN,DELETE_F,L,1,Delete Flag,"""T"" = True, ""F"" = False"
+SCREEN,UPDATE_F,L,1,Update Flag,"""T"" = True, ""F"" = False"
+SCREEN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SCREEN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SECURITY,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+SECURITY,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table
+SECURITY,DUL_RESN_C,C,4,Dual Login Reason Code,The reason why user's Cornerstone session ended abruptly
+SECURITY,USER_NAME,C,14,Network User Name,Network User Name
+SECURITY,NODE_ADDR,C,12,Network Node Address,Node Address
+SECURITY,LOGIN_D,D,8,Login Date,Date user logged in to Cornerstone
+SECURITY,LOGIN_TIME,C,8,Login Time,Time user logged in to Cornerstone
+SECURITY,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SECURITY,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SECURITY,UPLOAD_F,C,1,Upload Indicator,See Code Table
+SECURITY,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+SERV_DTL,SERV_ID,N,4,Server ID,Unique number to identify the server
+SERV_DTL,QUEUE_ID,N,4,Queue ID,Unique number to identify the printer
+SERV_DTL,QUEUE_NAME,C,7,Queue Name,Printer Name
+SERV_DTL,QUEUE_DEF,C,1,Queue Default,"""Y"" = Yes, ""N"" = No"
+SERV_DTL,QUEUE_DESC,C,30,Queue Description,Detailed description of printer
+SERV_DTL,QBASE_F,C,1,Qbase Flag,"""Y"" = Yes, ""N"" = No"
+SERV_HDR,SERV_ID,N,4,Server ID,Unique number to identify the server
+SERV_HDR,SERV_NAME,C,47,Server Name,Name of the server
+SERVCODE,SERV_TYP_C,C,4,Service Type Code,Service Table Primary Key
+SERVCODE,PGM_ID_C,C,4,Program ID Code,Programs Associated with this Service
+SERVCODE,CATEGORY_C,C,4,Category Code,Allowable Category Codes
+SERVCODE,AGE_LO_N,N,3,Age Low Limitation,Minimum Age
+SERVCODE,AGE_HI_N,N,2,Age High Limitation,Maximum Age
+SERVCODE,SEX_CODE,C,4,Sex Code,Allowable Sex Codes
+SERVCODE,BRF_DESC_T,C,30,Brief Description,Brief Description of the Service Type Code
+SERVCODE,EXP_DESC_M,M,4,Expanded Description,Expanded Description of the Service Type Code
+SERVCODE,SERV_DLV_C,C,4,Internal/External Service Delivery,See Code Table
+SERVCODE,SCRN_ID1_C,C,4,Screen ID 1,Screen Usage - See Code Table
+SERVCODE,SCRN_ID2_C,C,4,Screen ID 2,Screen Usage - See Code Table
+SERVCODE,SCRN_ID3_C,C,4,Screen ID 3,Screen Usage - See Code Table
+SERVCODE,SCRN_ID4_C,C,4,Screen ID 4,Screen Usage - See Code Table
+SERVCODE,SCRN_ID5_C,C,4,Screen ID 5,Screen Usage - See Code Table
+SERVCODE,SCRN_ID6_C,C,4,Screen ID 6,Screen Usage - See Code Table
+SERVCODE,SCRN_ID7_C,C,4,Screen ID 7,Screen Usage - See Code Table
+SERVCODE,SCRN_ID8_C,C,4,Screen ID 8,Screen Usage - See Code Table
+SERVCODE,SCRN_ID9_C,C,4,Screen ID 9,Screen Usage - See Code Table
+SERVCODE,SCRN_ID10_C,C,4,Screen ID 10,Screen Usage - See Code Table
+SERVCODE,SCRN_ID11_C,C,4,Screen ID 11,Screen Usage - See Code Table
+SERVCODE,SCRN_ID12_C,C,4,Screen ID 12,Screen Usage - See Code Table
+SERVCODE,SCRN_ID13_C,C,4,Screen ID 13,Screen Usage - See Code Table
+SERVCODE,SCRN_ID14_C,C,4,Screen ID 14,Screen Usage - See Code Table
+SERVCODE,SCRN_ID15_C,C,4,Screen ID 15,Screen Usage - See Code Table
+SERVCODE,SCRN_ID16_C,C,4,Screen ID 16,Screen Usage - See Code Table
+SERVCODE,SCRN_ID17_C,C,4,Screen ID 17,Screen Usage - See Code Table
+SERVCODE,SCRN_ID18_C,C,4,Screen ID 18,Screen Usage - See Code Table
+SERVCODE,SCRN_ID19_C,C,4,Screen ID 19,Screen Usage - See Code Table
+SERVCODE,SCRN_ID20_C,C,4,Screen ID 20,Screen Usage - See Code Table
+SERVCODE,CONFIDNT_F,C,1,Confidentiality Indicator,"""Y"" = Yes, ""N"" = No"
+SERVCODE,MED_CLM_F,C,1,Medicaid Claimable Indicator,"""Y"" = Yes, ""N"" = No"
+SERVCODE,SERV_CDE_C,C,1,Service Code Status,"""A"" = Active, ""I"" = Inactive"
+SERVCODE,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SERVCODE,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SERVERS,SERV_ID_I,C,4,Server Identification,Unique ID to identify the server
+SERVERS,SERV_NME_T,C,30,Server Name,Name of the server
+SERVERS,SERV_VOL_T,C,8,Server Volume Name to Attach,The volume name that the server attaches to
+SERVERS,WAN_USER_T,C,30,User ID for Server,User ID information for server
+SERVERS,WAN_PSW_T,C,9,Password for Server,Encrypted password of server
+SERVERS,MAP_DRV_T,C,1,Drive Designator to Map to,Drive Letter that server maps to
+SERVERS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SERVERS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SERVPROC,SERV_TYP_C,C,4,Service Type Code,Service Type Code. See Service Code Table
+SERVPROC,PROCEDUR_C,C,5,Procedure Code,Procedure Code. See Procedure Table
+SERVPROC,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SERVPROC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+STAFACTV,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+STAFACTV,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table
+STAFACTV,ACTIVITY_D,D,8,Activity Date,Date of Activity
+STAFACTV,ACTIVITY_C,C,4,Activity Code,Code used to describe activity
+STAFACTV,TIMSPNTH_H,N,2,Time Spent Hours,Time spent on activity in hours
+STAFACTV,TIMSPNTM_H,N,2,Time Spent Minutes,Time spent on activity in minutes
+STAFACTV,COMMENTS_M,M,10,Comments,Used to record additional notes
+STAFACTV,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+STAFACTV,OPERATOR_I,N,9,Operator ID,User Making Last Update
+STAFACTV,UPLOAD_F,C,1,Upload Indicator,See Code Table
+STAFACTV,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+STAFEXPN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+STAFEXPN,EMPL_ID_I,N,9,Employee ID,Provides a Link to the Employee Table
+STAFEXPN,EXPN_YR_N,N,4,Staff Expense Month End Year,Year of Staff Expense Month End
+STAFEXPN,EXPN_MTH_N,N,2,Staff Expense Month End Month,Month of Staff Expense Month End
+STAFEXPN,EXPN_TYP_C,C,4,Expense Type,Type of Expense
+STAFEXPN,ACTL_PAY_A,N,9.2,Actual Gross Pay This Month,Actual Gross Pay for the Month
+STAFEXPN,ACTL_HRS_N,N,5.1,Actual Paid Hours This Month,Actual number of paid hours for the Month
+STAFEXPN,STAF_TYP_C,C,4,Staff Type,Staff Type Code. See Code Table.
+STAFEXPN,EMP_FTE_N,N,4.2,Employee Full Time Equivalency,Employee's Full Time Hours
+STAFEXPN,FB_RATE_N,N,6.3,Fringe Benefit Rate,The Agency's Fringe Benefit Rate
+STAFEXPN,PCT_CMGT_N,N,6.2,Percent of Time Spent on CM Programs,Percent of time employee spent working on Case Management programs
+STAFEXPN,SALRYPCT_N,N,6.3,Salary Percent,The Percent
+STAFEXPN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+STAFEXPN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+STAFEXPN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+STAFEXPN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+SYSTEMCL,TABLENAME,C,10,Table Name,Cornerstone Table Name
+SYSTEMCL,COLUMNNAME,C,10,Column Name,Column Name from the Table
+SYSTEMCL,PROMPTNAME,C,40,Prompt Name,Discription of Column Name
+SYSTEMCL,LONGNAME,M,4,Long Name,Additional details of the Prompt Name
+SYSTEMCL,COLUMNTYPE,C,1,Column Type,Type of Column
+SYSTEMCL,COLUMNLEN,N,3,Column Length,Maximum Length of column
+SYSTEMCL,COLUMNDEC,N,3,Column Decimal,If column has a decimal space
+SYSTEMCL,GENTYPE,C,1,Generated Type,
+SYSTEMCL,DETAIL,M,4,Detail,
+SYSTEMCL,COLUMNPOS,N,3,Column Position,The numeric position of the column in it's parent table
+SYSTEMCL,USERID,C,5,User ID,User ID
+SYSTEMCL,CREATEDATE,D,8,Create Date,Date record was created
+SYSTEMCL,CREATETIME,N,5,Create Time,Time record was created
+SYSTEMCL,REFDATE,D,8,Reference Date,Date that table has been updated
+SYSTEMCL,REFTIME,N,5,Reference Time,Time that table was updated
+SYSTEMIX,TABLENAME,C,10,Table Name,Cornerstone Table Name
+SYSTEMIX,INDEXNAME,C,10,Index Name,Index Name of the Table
+SYSTEMIX,TAGNAME,C,10,Index Tag Name,Index Tag Name
+SYSTEMIX,PROMPTNAME,C,40,Prompt Name,Blank
+SYSTEMIX,LONGNAME,M,4,Long Name,Blank
+SYSTEMIX,FILENAME,C,12,Index File Name,File name of the index
+SYSTEMIX,INDEXTYPE,C,1,Index Type,Type of Index
+SYSTEMIX,DETAIL,M,4,Detail,Details about the index
+SYSTEMIX,EXPKEY,M,4,Index Key Expression,Details about the index key expression
+SYSTEMIX,EXPFOR,M,4,Index For Expression,Details about the index for expression
+SYSTEMIX,ORDERBY,C,10,Order By Columns,Blank
+SYSTEMIX,ORDERDIR,C,1,Index Order Direction,"""A"" = Ascending
+""D"" = Descending"
+SYSTEMIX,SYSSTATUS,C,1,System Status,"""P"" = Primary Key"
+SYSTEMIX,RUNSTATUS,C,1,Run Status,
+SYSTEMIX,ISUNIQUE,L,1,Unique Indicator,"""T"" = True, ""F"" = False"
+SYSTEMIX,USERID,C,5,User ID,SYS
+SYSTEMIX,CREATEDATE,D,8,Create Date,Date Index was created
+SYSTEMIX,CREATETIME,N,5,Create Time,Time Index was created
+SYSTEMIX,REFDATE,D,8,Reference Date,Date of most recent index update
+SYSTEMIX,REFTIME,N,5,Reference Time,Time of most recent index update
+SYSTEMTB,TABLENAME,C,10,Table Name,Cornerstone Table Name
+SYSTEMTB,TABLEID,C,5,Table ID,Unique ID to identify Table
+SYSTEMTB,DBNAME,C,10,Datebase Name,Name of the Database that the Table uses
+SYSTEMTB,VALTABNAME,C,10,Valid Table Name,
+SYSTEMTB,PROMPTNAME,C,40,Prompt Name,Description of Table
+SYSTEMTB,LONGNAME,M,4,Long Name,Detailed Description of Table
+SYSTEMTB,FILENAME,C,12,File Name,Name of the Table File
+SYSTEMTB,TABLETYPE,C,1,Table Type,"1 = Central Office Only
+2 = Central Office Maintained
+3 = Clinic Only
+4 = Shared"
+SYSTEMTB,DETAIL,M,4,Detail,
+SYSTEMTB,SYSSTATUS,C,1,System Status,
+SYSTEMTB,RUNSTATUS,C,1,Run Status,
+SYSTEMTB,ISAGAIN,L,1,Is Again,"""T"" = True, ""F"" = False"
+SYSTEMTB,ISEXCLUSIV,L,1,Is Exclusive,"""T"" = True, ""F"" = False"
+SYSTEMTB,ISNOUPDATE,L,1,Is No Update,"""T"" = True, ""F"" = False"
+SYSTEMTB,USERID,C,5,User ID,SYS
+SYSTEMTB,CREATEDATE,D,8,Create Date,Date record was created
+SYSTEMTB,CREATETIME,N,5,Create Time,Time of day that record was created
+SYSTEMTB,REFDATE,D,8,Reference Date,Date that record was last updated
+SYSTEMTB,REFTIME,N,5,Reference Time,Time of day that record was last updated
+SYSXREF,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+SYSXREF,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+SYSXREF,SYSTEM_C,C,4,System Code,"This Table is Used to Link to the same Participant in Another System - The value of ""LOCL"" is used as a cross-reference to Local Agency Applications such as an Agency Billing System - See Code Table for Other System Linkage Options"
+SYSXREF,XREF_ID_I,C,14,Cross Reference ID,Participant ID that is used in the Referenced System
+SYSXREF,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+SYSXREF,OPERATOR_I,N,9,Operator ID,User Making Last Update
+SYSXREF,UPLOAD_F,C,1,Upload Indicator,See Code Table
+SYSXREF,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+TRANSLAT,CODE_N_T,C,10,Code Name,Cornerstone Table Name
+TRANSLAT,CVAL_C,C,8,Cornerstone Value,Value in Cornerstone
+TRANSLAT,CBOVAL_C,C,10,CBO Value,Value at Central Billing Office (CBO)
+TRANSLAT,TOCVAL_C,C,8,To Cornerstone Value,Corresponding Cornerstone Value
+TRANSLAT,DESC_C_T,C,20,Code Description,Description of the code
+WIC,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+WIC,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+WIC,EMPL_ID_I,N,9,Employee ID/Assessor,CHP Link to Employee Table
+WIC,BASE_D,D,8,Base Date,FI Issuance Control Field
+WIC,NXT_BASE_D,D,8,Next Base Date,FI Issuance Control Field
+WIC,FI_LOCK_C,C,4,FI Lock,"""A"" = Administrative
+""D"" = Dual Participation
+""N"" = No Lock"
+WIC,CERT_V_D,D,8,Certification Visit Date,Date of certification at the clinic
+WIC,CERT_S_C,C,4,Certification Status,See Code Table
+WIC,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+WIC,OPERATOR_I,N,9,Operator ID,User Making Last Update
+WIC,UPLOAD_F,C,1,Upload Indicator,See Code Table
+WIC,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+WICRISKS,RISK_C,C,4,Risk Code,See Code Table for Risk Code descriptions
+WICRISKS,PRI_P_N,N,1,Priority for Pregnant,Determines participant's Priority Level
+WICRISKS,PRI_B_N,N,1,Priority for Breastfeeding,Determines participant's Priority Level
+WICRISKS,PRI_N_N,N,1,Priority for Not Breastfeeding,Determines participant's Priority Level
+WICRISKS,PRI_I_N,N,1,Priority for Infant,Determines participant's Priority Level
+WICRISKS,PRI_C_N,N,1,Priority for Child,Determines participant's Priority Level
+WICRISKS,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+WICRISKS,OPERATOR_I,N,9,Operator ID,User Making Last Update
+WORDS1,WORD,C,8,Word,Used in the Spell Check functionality
+WORDS2,WORD,C,12,Word,Used in the Spell Check functionality
+WORDS3,WORD,C,20,Word,Used in the Spell Check functionality
+WWFLLWUP,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+WWFLLWUP,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+WWFLLWUP,VISIT_D,D,8,Visit Date,Date of Office Visit
+WWFLLWUP,SERV_TYP_C,C,4,Service Type Code,See SERVCODE table for Service Type Code descriptions
+WWFLLWUP,FOLLOWUP_D,D,8,Follow-Up Date,Date of the Follow-up appointment
+WWFLLWUP,FLLWUP_C,C,4,Follow-Up Code,"See Code Table for Follow-UP code descriptions
+Cde_name_t = ww_fllwup"
+WWFLLWUP,COMMENTS_M,M,4,Comments,Used to record additional notes
+WWFLLWUP,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+WWFLLWUP,OPERATOR_I,N,9,Operator ID,User Making Last Update
+WWFLLWUP,UPLOAD_F,C,1,Upload Indicator,See Code Table
+WWFLLWUP,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
+WWOMEN,CLINICID_I,C,6,Clinic ID,Cornerstone Clinic Number
+WWOMEN,PART_ID_I,C,14,Participant ID,Cornerstone Participant Identifier
+WWOMEN,VISIT_D,D,8,Visit Date,Office Visit Date
+WWOMEN,SERV_TYP_C,C,4,Service Type Code,See SERVCODE for Service Type Code descriptions
+WWOMEN,NXTSCRN_D,D,8,Next Screening Date,Date of Next Screening
+WWOMEN,REFERRED_F,C,1,Referred Flag,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,DXOFFVST_D,D,8,Doctor's Office Visit Date,Date of Doctor's Office Visit
+WWOMEN,HEIGHT_N,N,3,Height,Participant's Height in inches
+WWOMEN,WEIGHT_N,N,3,Weight,Participant's Weight in pounds
+WWOMEN,SBP1_N,N,3,First Systolic Blood Pressure Number,Record First Systolic Blood Pressure Number
+WWOMEN,DBP1_N,N,3,First Diastolic Blood Pressure Number,Record First Diastolic Blood Pressure Number
+WWOMEN,SBP2_N,N,3,Second Systolic Blood Pressure Number,Record Second Systolic Blood Pressure Number
+WWOMEN,DBP2_N,N,3,Second Diastolic Blood Pressure Number,Record Second Diastolic Blood Pressure Number
+WWOMEN,LABVISIT_D,D,8,Lab Visit Date,Date of Lab Visit
+WWOMEN,FASTING_F,C,1,Fasting Flag,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,GLUCOSE_N,N,3,Glucose Number,Record Glucose Number
+WWOMEN,TOT_CHOL_N,N,3,Total Cholesterol Number,Record Total Cholesterol Number
+WWOMEN,HDL_N,N,3,HDL Cholesterol Number,Record HDL Cholesterol Number
+WWOMEN,LDL_N,N,3,LDL Cholesterol Number,Record LDL Cholesterol Number
+WWOMEN,TRIGLY_N,N,4,Triglyceride Number,Record Triglyceride Number
+WWOMEN,A1C_N,N,6.1,Hemoglobin A1C Percent,Record Hemoglobin A1C Percent number
+WWOMEN,BP_ST_C,C,4,Blood Pressure Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,BP_DIAG_D,D,8,Diagnostic Exam Date,Date of the Diagnostic Exam
+WWOMEN,BP_TREAT_C,C,4,Blood Pressure Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,TC_ST_C,C,4,Total Cholesterol Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,TC_DIAG_D,D,8,Diagnostic Exam Date,Date of Diagnostic Exam
+WWOMEN,TC_TREAT_C,C,4,Total Cholesterol Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,BG_ST_C,C,4,Blood Glucose Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,BG_DIAG_D,D,8,Blood Glucose Diagnostic Exam Date,Date of Blood Glucose Diagnostic Exam
+WWOMEN,BG_TREAT_C,C,4,Blood Glucose Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,ABBP_ST_C,C,4,Abnormal Blood Pressure Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,ABBPDIAG_D,D,8,Abnormal Blood Pressure Diagnostic Exam Date,Date of Abnormal Blood Pressure Diagnostic Exam
+WWOMEN,ABBP_TR_C,C,4,Abnormal Blood Pressure Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,ABTC_ST_C,C,4,Abnormal Total Cholesterol Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,ABTCDIAG_D,D,8,Abnormal Total Cholesterol Diagnostic Exam Date,Date of Abnormal Total Cholesterol Diagnostic Exam
+WWOMEN,ABTC_TRT_C,C,4,Abnormal Total Cholesterol Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,ABBG_ST_C,C,4,Abnormal Blood Glucose Work Up Status,"See Code Table for Work Up Status code descriptions
+Cde_name_t = ww_wrkupst"
+WWOMEN,ABBGDIAG_D,D,8,Abnormal Blood Glucose Diagnostic Exam Date,Date of Abnormal Blood Glucose Diagnostic Exam
+WWOMEN,ABBG_TRT_C,C,4,Abnormal Blood Glucose Treatment Prescribed,"See Code Table for Treatment code descriptions
+Cde_name_t = ww_trtmnt"
+WWOMEN,SRHC_C,C,4,Self Related High Cholesterol,"See Code Table for Response code descriptions
+Cde_name_t = ww_hhrsp"
+WWOMEN,SRHB_C,C,4,Self Related High Blood Pressure,"See Code Table for Response code descriptions
+Cde_name_t = ww_hhrsp"
+WWOMEN,SRHA_C,C,4,Self Related Heart Attack,"See Code Table for Response code descriptions
+Cde_name_t = ww_hhrsp"
+WWOMEN,FAMHAM_C,C,4,Family Heart Attack Male,"See Code Table for Response code descriptions
+Cde_name_t = ww_hhrsp"
+WWOMEN,FAMHAF_C,C,4,Family Heart Attack Female,"See Code Table for Response code descriptions
+Cde_name_t = ww_hhrsp"
+WWOMEN,HCMED_C,C,4,High Cholesterol Medication,"See Code Table for Response code descriptions
+Cde_name_t = ww_medst"
+WWOMEN,HBPMED_C,C,4,High Blood Pressure Medication,"See Code Table for Response code descriptions
+Cde_name_t = ww_medst"
+WWOMEN,SMOKER_C,C,4,Smoker,"See Code Table for Response code descriptions
+Cde_name_t = ww_smkngst"
+WWOMEN,FRT_PD_C,C,4,Fruit Products,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla01"
+WWOMEN,VEG_PD_C,C,4,Vegetable Products,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla01"
+WWOMEN,GRN_PD_C,C,4,Grain Products,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla01"
+WWOMEN,NBR_WGRN_C,C,4,Number of Whole Grain Products,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla02"
+WWOMEN,DAIRY_PD_C,C,4,Dairy Products,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla03"
+WWOMEN,ACT10_PW_C,C,4,10 Minutes Activity per Week,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla04"
+WWOMEN,ACT30_PW_C,C,4,30 Minutes Activity per Week,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla04"
+WWOMEN,MKHTHLF_C,C,4,Make Healthier Life,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla05"
+WWOMEN,EATHTHFD_C,C,4,Eat Healthier Food,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla05"
+WWOMEN,BEINGPA_C,C,4,Being Physically Active,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla05"
+WWOMEN,QTNGSMK_C,C,4,Quitting Smoking,"See Code Table for Response code descriptions
+Cde_name_t = ww_hla05"
+WWOMEN,L1CON_D,D,8,Level 1 Contact Date,Date of Level 1 Contact
+WWOMEN,INTVLANG_C,C,10,Intervention Language Type,"See Code Table for Response code descriptions
+Cde_name_t = ww_slang"
+WWOMEN,INTRVTYP_C,C,4,Intervention Intensity,"See Code Table for Response code descriptions
+Cde_name_t = ww_intrv"
+WWOMEN,CONTYPE_C,C,4,Contact Type,"See Code Table for Response code descriptions
+Cde_name_t = ww_contype"
+WWOMEN,L2_INTRV_D,D,8,Level 2 Intervention Date,Date of Level 2 Intervention
+WWOMEN,NUT_CNSL_F,C,1,Nutrition Counseling,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,CNT_CNSL_F,C,1,Community Nutrition Counseling,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,PA_CNSL_F,C,1,Physical Activity Counseling,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,PA_RSC_F,C,1,Physical Activity Resources,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,TOB_QUIT_F,C,1,Tobacco Quit Line,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,INTERVS1_F,C,1,Attended Intervention Session 1,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,INTERVS1_D,D,8,Intervention Session 1 Date,Date of Intervention Session 1
+WWOMEN,INTERVS2_F,C,1,Attended Intervention Session 2,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,INTERVS2_D,D,8,Intervention Session 2 Date,Date of Intervention Session 2
+WWOMEN,INTERVS3_F,C,1,Attended Intervention Session 3,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,INTERVS3_D,D,8,Intervention Session 3 Date,Date of Intervention Session 3
+WWOMEN,INTERVS4_F,C,1,Attended Intervention Session 4,"""Y"" = Yes, ""N"" or blank = No"
+WWOMEN,INTERVS4_D,D,8,Intervention Session 4 Date,Date of Intervention Session 4
+WWOMEN,LAST_UPD_D,D,8,Date Last Update,Last Site Update of This Record
+WWOMEN,OPERATOR_I,N,9,Operator ID,User Making Last Update
+WWOMEN,UPLOAD_F,C,1,Upload Indicator,See Code Table
+WWOMEN,CO_UPD_D,D,8,Central Office Date Last Update,Last Update from Central Office
