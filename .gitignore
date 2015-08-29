@@ -1,0 +1,6 @@
+*.password
+.ipynb_checkpoints/
+*.pyc
+*.save*
+celerybeat*
+*_pkls/

@@ -1,0 +1,30 @@
+{% extends "layout_admin.html" %}
+{% block content %}
+  <div class="row">
+    <div class="col-sm-10 col-centered text-center">
+    <h1>Minimum Eligibility Score</h1>
+    <h3>Please set a minimum eligibility score.</h3>
+    {% if pre %}
+    <h3>The current score is {{ pre }}.</h3>
+    <p>Approximately <b>{{pre_pct}}</b> of women who take the 707G assessment will be eligible for BBO using this score.</p>
+    {% endif %}
+    <br>
+    <div class="row">
+    <div class="col-sm-4 col-centered text-center well">
+    <form action="" method="POST">
+      <input type="number" step="any" min="0" name="minscore" value="{{request.form.minscore}}"><br><br>
+      <input class="btn btn-default" type="submit" value="Set Score">
+    </form>
+    </div>
+    </div>
+    {% if is_set %}
+      <br><br>
+      <h3>You have set the score to be {{ score }}.</h3>
+      <p>Approximately <b>{{set_pct}}</b> of women who take the 707G assessment will be eligible for BBO using this score.</p>
+    {% endif %}
+    </div>
+    <br>
+    <br>
+    {% include "metrics_archive.html" %}
+  </div>
+{% endblock %}

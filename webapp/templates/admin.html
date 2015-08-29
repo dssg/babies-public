@@ -1,0 +1,25 @@
+{% extends "layout_admin.html" %}
+{% block content %}
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>707G Assessment Weighter</h1>
+      <h3>This is the webpage to get weights for the 707G assessment.</h3>
+      <br>
+      <h3>If you would like to view the weights generated from the previous run, click below:</h3>
+      <br>
+      <a href="/weights_archive" class="btn btn-info btn-lg" role="button">View Previous Weights</a>
+      <br><br>
+      <h3>If you would like to a set a minimum eligibility score for BBO, click below:</h3>
+      <br>
+      <a href="/threshold" class="btn btn-danger btn-lg" role="button">Set Minimum Eligibility Score</a>   
+      <br><br>
+      <h3>If you have extracted new data and would like to update the database, click below:</h3>
+      <br>
+      <a href="/warning" class="btn btn-warning btn-lg" role="button">Update Data</a>
+      <br><br>
+      <h3>If you have updated your data and would like to generate new weights, click below:</h3>
+      <br>
+      <a href="/preweights" class="btn btn-primary btn-lg" role="button">Obtain Weights</a>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% if admin %}
+    {% extends "layout_admin.html" %}
+{% elif clinic %}
+    {% extends "layout_clinic.html" %}
+{% else %}
+    {% extends "layout.html" %}
+{% endif %}
+{% block content %}
+<iframe width="100%" height="800" frameborder="0" src="https://rashida.cartodb.com/viz/9992a6c4-3f15-11e5-b335-0e018d66dc29/embed_map?zoom=7&center_lat=40.01&center_lon=-89.31" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+{% endblock %}
