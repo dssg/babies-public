@@ -302,6 +302,14 @@ CREATE TABLE mergetemp5 AS
             THEN 0
             ELSE NULL
             END AS "ADVB_OTC",
+        CASE WHEN "PTB_OTC" = 1 OR "LBW_OTC" = 1 OR "INFM_OTC" = 1 
+            OR "NICU_OTC" = 1
+            THEN 1 
+            WHEN "PTB_OTC" = 0 AND "LBW_OTC" = 0 AND "INFM_OTC" = 0 
+            AND "NICU_OTC" = 0 
+            THEN 0 
+            ELSE NULL
+            END AS "ADVB1_OTC",
         CASE WHEN "VPTB_OTC" = 1 OR "VLBW_OTC" = 1 OR "INFM_OTC" = 1
             OR "NICU_OTC" = 1
             THEN 1
