@@ -178,6 +178,8 @@ SELECT
     "INF_COMPL_OTC",
     -- adverse birth outcome (any one of the adverse outcomes)
     "ADVB_OTC",
+    -- adverse birth outcome used (preterm, low birthweight, nicu, inf death)
+    "ADVB1_OTC",
     -- very adverse birth outcome
     "VADVB_OTC"
 
