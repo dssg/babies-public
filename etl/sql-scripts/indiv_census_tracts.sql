@@ -10,6 +10,6 @@ CREATE TABLE core_birth_info_rc AS
         substring(indiv_census_tracts."FIPS_BLK_GEO" from 1 for 11) 
             AS "FIPS_TRACT_GEO"
         FROM core_birth_info_rc2
-        LEFT JOIN indiv_census_tracts USING (latitude, longitude);
+        LEFT JOIN indiv_census_tracts USING ("UNI_PART_ID_I");
 
 DROP TABLE core_birth_info_rc2;

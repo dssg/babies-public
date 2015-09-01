@@ -31,7 +31,7 @@ def geocoder(table_name, address_table, conn, engine,
         with open('geocode.sh', 'w') as f:
             f.write('#!/bin/bash\n\n')
             f.write('curl -o temp_coordinates.json -d @temp_addr.out '+
-                    'http://www.datasciencetoolkit.org/street2coordinates')
+                    'http://54.188.66.178/')
 
     cur = conn.cursor()
     cur.execute('DROP TABLE IF EXISTS '+table_name)
@@ -82,9 +82,10 @@ def coord2tract(table_name, geo_table, conn, engine, num_procs=50, timeout=20):
         return result 
 
     cur = conn.cursor()
+    query = 'SELECT "UNI_PART_ID_I", latitude, longitude FROM ' + geo_table + \
+            ' WHERE latitude is NOT NULL'
 
-    add_sql = pd.read_sql('SELECT latitude, longitude FROM ' + geo_table + 
-                          ' WHERE latitude is NOT NULL', conn)
+    add_sql = pd.read_sql(query, conn)
     add_sql = add_sql.drop_duplicates()
 
     api_link = ('http://data.fcc.gov/api/block/find?format=json&'
